@@ -2,7 +2,6 @@ package com.vit.VIT.controller;
 
 import java.util.List;
 
-import javax.persistence.Id;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -38,13 +37,13 @@ public class CategoriaController {
 	public ResponseEntity<Categoria> GetById(@PathVariable long id){
 		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
-	@GetMapping ("/categoriaProduto/{categoriaProduto}")
+	@GetMapping ("/categoriaProduto/{produto}")
 	public ResponseEntity<List<Categoria>> GetByCategoriaProduto (@PathVariable String categoriaProduto){
 		return ResponseEntity.ok(repository.findAllByCategoriaProdutoContainingIgnoreCase(categoriaProduto));
 	}
 	
 	@PostMapping
-	public ResponseEntity<Categoria> Post(@RequestBody Categoria categoria){
+	public ResponseEntity<Categoria> post(@RequestBody Categoria categoria){
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(categoria));
 	}
 	
