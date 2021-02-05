@@ -10,6 +10,6 @@ import com.vit.VIT.model.Usuario;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 	
-	public Optional<Usuario> findByNome(String nome);
+	public Optional<Usuario> findByUsuario(String usuario);
 
 }

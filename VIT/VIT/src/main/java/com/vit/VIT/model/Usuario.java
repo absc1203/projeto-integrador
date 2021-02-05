@@ -19,7 +19,7 @@ public class Usuario {
 	//----------------------------------------------------
 	@NotNull
 	@Size(min =10,max=100)
-	private String email;
+	private String usuario;
 	
 	//----------------------------------------------------
 	@NotNull
@@ -40,11 +40,11 @@ public class Usuario {
 	public void setId(long id) {
 		this.id = id;
 	}
-	public String getEmail() {
-		return email;
+	public String getUsuario() {
+		return usuario;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
 	}
 	public String getSenha() {
 		return senha;
