@@ -53,7 +53,7 @@ public class ProdutoController {
 	}
 	
 	@DeleteMapping("/{id}")
-	public void delete(long id) {
+	public void delete(@PathVariable long id) {
 		repository.deleteById(id);
 	}
 }
