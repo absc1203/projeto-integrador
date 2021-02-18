@@ -1,5 +1,5 @@
 # VIT 
-## Esse repositório se refere ao projeto trabalhado no curso de Desenvolvedor FullStack Java Jr. da Generation Brasil!
+### Esse repositório se refere ao projeto trabalhado no curso de Desenvolvedor FullStack Java Jr. da Generation Brasil!
 
 ## Integrantes do Grupo 👨👩 
 ### André Brito
