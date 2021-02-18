@@ -1,4 +1,4 @@
-# VIT 
+# VIT | Saúde e Educação
 
 ## Bem vindo ao nosso Projeto Integrador! 🚀
 
