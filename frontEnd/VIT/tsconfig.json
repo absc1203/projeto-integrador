@@ -20,7 +20,11 @@
       "es2018",
       "dom"
     ],
+<<<<<<< HEAD
     "allowJs": true
+=======
+"allowJs": true
+>>>>>>> 5c435eaf2250f1cd17c353943bfc9536e5883d57
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
