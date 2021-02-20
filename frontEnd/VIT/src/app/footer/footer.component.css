@@ -1,63 +1,17 @@
 .corFundo{
     background-color: #9CCB90;
-    height: 30rem;
-}
-
-.liConfig{
-    text-decoration: none;
-    display: inline;
-    margin-right: 11rem;
-}
-
-.liConfig2{
-    text-decoration: none !important;
-    display: block;
-    line-height: 1.5rem;
-    margin-left: 14rem;
-    margin-right: 6.5rem;
-    color: #4C4C45;
-}
-
-.liConfig3{
-    text-decoration: none !important;
-    display: block;
-    line-height: 1.5rem;
-    margin-right: 7rem;
-    color: #4C4C45;
-}
-
-.liConfig4{
-    text-decoration: none !important;
-    display: block;
-    line-height: 1.5rem;
-    margin-right: 6.5rem;
-    color: #4C4C45;
-}
-
-.liConfig5{
-    text-decoration: none !important;
-    display: block;
-    line-height: 1.5rem;
-    margin-right: 2rem;
-    color: #4C4C45;
-}
-
-.liConfig6{
-    text-decoration: none !important;
-    display: inline;
-    line-height: 1.5rem;
-    margin-left: 0.8rem;
-    font-size: 1.5rem;
-    color: #4C4C45;
+    min-height: fit-content;
 }
 
 .liConfig6:hover{
-    color:black;
+    color: black;
     cursor: pointer;
 }
 
 .colaboradoresConfig{
-    width: 7rem;
+    width: 15rem;
 }
 
-
+.textMenuConfig{
+    color: #4C4C45;
+}
