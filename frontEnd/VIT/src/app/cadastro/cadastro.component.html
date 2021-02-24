@@ -1,11 +1,11 @@
-<div class="container-fluid">
+<div class="container-fluid ">
 
     <div class="row d-flex justify-content-center">
 
-        <div class="col-md-10 mt-5 mb-5">
+        <div class="col-md-5 mt-5 mb-5 border border-dark border-radius-2">
 
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-10">
+            <div class="row d-flex justify-content-center mb-4">
+                <div class="col-md-12">
 
                     <h1 class="text-center">Cadastro</h1>
                     <p class="text-center .fs-4 text">Por favor, preencha os campos abaixo para criar sua conta</p>
@@ -16,9 +16,9 @@
 
                     </div>
 
-                    <div class="row">
+                   <!-- <div class="row">
 
-                        <!--<div class="form-group col-6">
+                        <div class="form-group col-6">
 
                              <label for="genero">Gênero</label>
                             <select class="form-control" name="genero" id="genero">
@@ -34,9 +34,9 @@
 
                             <input class="form-control" type="date" value="dd-mm-aaaa" id="nascimento" >
 
-                        </div>-->
+                        </div>
 
-                    </div>
+                    </div>-->
 
                     <!--  <div class="row">
                         <div class="form-group col-md-6">
@@ -46,28 +46,33 @@
 
 
 
-                    <div class="form-group col md-6">
-                        <label for="email">Usuário</label>
-                        <input class="form-control" type="text" name="usuario" id="usuatio" placeholder="Seu e-mail">
-                    </div>
-                </div>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label for="confirmSenha">Usuário</label>
+                                <input class="form-control" type="text" name="usuario" id="usuario"
+                                    placeholder="Seu usuário">
+                            </div>
+                        </div>
+                
 
                 <div class="row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-12">
                         <label for="senha">Senha</label>
                         <input class="form-control" type="password" name="senha" id="senha" placeholder="Sua senha">
                     </div>
-
-                    <div class="form-group col-md-6">
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
                         <label for="confirmSenha">Confirme senha</label>
                         <input class="form-control" type="password" name="confirmSenha" id="confirmSenha"
                             placeholder="Confirme sua senha">
                     </div>
                 </div>
+                </div>
 
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center mt-2">
                     <button type="submit" class="btn btn-outline-dark mr-5" routerLink='/entrar'>Cancelar</button>
-                    <button type="submit" class="btn btn-outline-dark">Cadastrar</button>
+                    <button type="submit" class="btn btn-outline-dark ">Cadastrar</button>
 
                 </div>
 
