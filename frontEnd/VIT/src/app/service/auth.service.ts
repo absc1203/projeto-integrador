@@ -1,11 +1,9 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Usuario } from '../model/Usuario';
 import { Observable } from 'rxjs';
-import { User } from '../model/User';
-import { UserLogin } from '../model/UserLogin';
 
-
-//CRIANDO OS END POINTS IGUAIS AOS ESCRITOS NO CONTROLLER
+import { UsuarioLogin } from '../model/UsuarioLogin';
 @Injectable({
   providedIn: 'root'
 })
@@ -13,13 +11,15 @@ export class AuthService {
 
   constructor(
     private http: HttpClient
+    
   ) { }
 
-    entrar(userLogin: UserLogin): Observable<UserLogin>{ //garantindo que receberei um user
-      return this.http.post<UserLogin>('http://localhost:8080/usuarios/logar', userLogin)
-    }
+  cadastrar(usuario: Usuario): Observable<Usuario>{
+    return this.http.post<Usuario>('http://localhost:8080/usuarios/cadastrar', usuario)
+  }
 
-    cadastrar(user: User): Observable<User>{
-      return this.http.post<User>('http://localhost:8080/usuarios/cadastrar', user)
-    }
+  logar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
+    return this.http.post<UsuarioLogin>('http://localhost:8080/usuarios/logar', usuarioLogin)
+  }
+
 }
