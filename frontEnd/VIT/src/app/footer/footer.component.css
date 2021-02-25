@@ -1,0 +1,17 @@
+.corFundo{
+    background-color: #9CCB90;
+    min-height: fit-content;
+}
+
+.liConfig6:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.colaboradoresConfig{
+    width: 15rem;
+}
+
+.textMenuConfig{
+    color: #4C4C45;
+}

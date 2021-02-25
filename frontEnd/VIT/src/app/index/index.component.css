@@ -1,0 +1,30 @@
+.carousel-item{
+    height: 30rem ;
+}
+
+.linha{
+    background-color: #9ccb90;
+    height: 2px;
+    width: 60rem;
+}
+
+.linha-roupa{
+    background-color: #9ccb90;
+    height: 2px;
+}
+
+.banner{
+    height: 20rem;
+}
+
+.carousel-left { 
+    width: 75%; float: left; 
+}
+
+.some-text { 
+    float: left; width: 25%;
+}
+
+.dist{
+    margin-top: 10rem;
+}
