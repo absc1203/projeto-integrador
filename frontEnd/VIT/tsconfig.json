@@ -6,6 +6,8 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "strictPropertyInitialization": false, //desativando a solicitação de inicialização
+                                           //de variáveis
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
@@ -20,11 +22,7 @@
       "es2018",
       "dom"
     ],
-<<<<<<< HEAD
     "allowJs": true
-=======
-"allowJs": true
->>>>>>> 5c435eaf2250f1cd17c353943bfc9536e5883d57
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
