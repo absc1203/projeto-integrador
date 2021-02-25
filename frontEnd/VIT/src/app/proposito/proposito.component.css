@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: #eee
+}
+
+.card {
+    border-radius: 20px;
+    background: #eeeeee;
+    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
+    border: none
+}
+
+.card img {
+    border-radius: 40%;
+    background: linear-gradient(145deg, #fd0000, #ffffff);
+    box-shadow: 20px 20px 60px #02abc8, -20px -20px 60px #08ec13
+}
+
+.neo-button {
+    width: 40px;
+    height: 40px;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #1ebb2c, #10cfb6);
+}
+
+.devImage {}
+
+.fa-facebook {
+    color: #3b5998
+}
+
+.fa-fa-facebook {
+    color: #0077b5;
+    font-size: 12pt;
+}
+
+.fa-google {
+    color: #dc4e41
+}
+
+.fa-youtube {
+    color: #cd201f
+}
+
+.fa-twitter {
+    color: #55acee
+}
