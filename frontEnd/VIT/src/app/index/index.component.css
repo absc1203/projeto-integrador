@@ -1,0 +1,75 @@
+.carousel-inner{
+    width: auto;
+}
+
+.linha{
+    background-color: #9ccb90;
+    height: 2px;
+    width: 60rem;
+    min-width: 5rem;
+}
+
+.linha-roupa{
+    background-color: #9ccb90;
+    height: 2px;
+}
+
+.carousel-left { 
+    width: 75%; float: left; 
+}
+
+.some-text { 
+    float: left; width: 25%;
+}
+
+.dist{
+    margin-top: 10rem;
+}
+
+
+/* Cards */
+
+.card {
+    border: none;
+    border-radius: 0px;
+    background-color: #fff
+}
+
+.text1 {
+    font-size: 18px;
+    color:#000
+}
+
+.info {
+    line-height: 17px
+}
+
+.cost span {
+    color: #fb3531;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.watchcost span {
+    color: #286783;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.watch {
+    background: #286783
+}
+
+.tshirtcost span {
+    color: #0012b2;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.tshirt {
+    background-color: #0012b2
+}
+
+.cursor {
+    cursor: pointer
+}
