@@ -1,1 +1,145 @@
-<p>menu works!</p>
+<!--Inicio primeira linha menu-->
+<div class="container-fluid bg-menu">
+    <div class="container-fluid bg-menu"></div>
+    <div class="container-fluid bg-menu row ">
+
+        <p class="mt-2"></p>
+    </div>
+</div>
+<!--Fim primeira linha menu-->
+
+<!--Inicio conteudo Entre as linhas (menu)-->
+<div class="container-fluid d-flex justify-content-center">
+
+    <div class="row justify-content-center align-items-center">
+        <!--Inicio Imagem home-->
+
+        <div class="row align-items-center">
+            <!--Inicio NavBar-->
+            <nav class="navbar navbar-expand-lg navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a routerLink="/index">
+                            <img class="img-home" src="../../assets/imagens/home.png" alt="">
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link text-dark font-weight-bold" href="#">PROPÓSITO</a>
+                    </li>
+
+                    <li class="nav-item dropdown ml-5 mr-5">
+                        <a class="nav-link dropdown-toggle text-dark font-weight-bold" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PRODUTOS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" routerLink="/index">Vit Menstrual</a>
+                            <a class="dropdown-item" routerLink="/index">Camisetas</a>
+                            <a class="dropdown-item" routerLink="/index">Produtos Diversos</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item font-weight-bold" routerLink="/index">Cadastrar produto</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <button class="navbar-toggler btn" type="button" data-toggle="collapse"
+                    data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+                    aria-label="Alterna navegação">
+                </button>
+                <a>
+                    <img class="" src="../../assets/imagens/logoVIT.png" alt="">
+                </a>
+
+
+                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark font-weight-bold ml-5 mr-5" routerLink="/stakeholder">QUERO APOIAR </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark font-weight-bold" routerLink="/contato">CONTATO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModal" class="img-user" src="../../assets/imagens/user.webp"
+                                    alt="">
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">
+                                <img class="img-compras" src="../../assets/imagens/carrinho.png" alt="">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </nav>
+            <!--Fim NavBar-->
+        </div>
+        <!--Fim Imagem home-->
+
+
+    </div>
+</div>
+<!--Fim conteudo Entre as linhas (menu)-->
+
+
+
+<!--Inicio Segunda linha menu-->
+<div class="conteiner-fluid">
+    <div class="container-fluid"></div>
+    <div class="conteiner-fluid bg-menu row ">
+
+        <p class="mt-2"></p>
+    </div>
+</div>
+<!--Fim Segunda linha menu-->
+
+<!--Inicio modal acoplado ao logo de usuário-->
+<div class="container-fluid d-flex justify-content-center"> </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content p-4">
+            <a href="https://www.site24x7.com/pt/tools/seletor-de-codigo-cor.html">
+                <button type="button" class="close x" data-dismiss="modal" aria-label="Close"> <span
+                        aria-hidden="true">&times;</span> </button></a>
+            <div class="row modal-header border-0 mb-2">
+
+                <h5 class=" row modal-title" id="exampleModalLabel">
+
+                    <img src="../../assets/imagens/logoVIT.png" alt="">
+
+                    <a style="text-decoration: none;"
+                        href="https://www.site24x7.com/pt/tools/seletor-de-codigo-cor.html">
+                        <button style="margin-top: initial; padding-top: 1.7rem;" type="button"
+                            class="close btn btn-outline-danger d-flex " aria-label="Close" disabled='true'> <span
+                                aria-hidden="true">Cadastrar</span> </button>
+                    </a>
+
+
+                </h5>
+
+            </div>
+
+            <div class="modal-body">
+                <h3 class="mb-4 title corEntrar">Entrar</h3>
+                <div class="form-group"> <input type="text" id="name" class="form-control p-0" required
+                        style="box-shadow: none;border-radius:0px"> <label class="form-control-placeholder p-0"
+                        for="name lbl">Usuário</label> </div>
+
+                <div class="form-group"> <input type="password" id="pass" class="form-control p-0" required
+                        style="box-shadow: none;border-radius:0px"> <label class="form-control-placeholder p-0"
+                        for="password">Senha</label> </div> <label class="tc">By signing up I accept the <strong>Terms &
+                        Conditions</strong> of VIT | Saúde & Educação</label>
+            </div>
+            <div class="modal-footer border-0 mb-4"> <button type="button" class="btn signup col-6 col-md-6"
+                    data-dismiss="modal">ENTRAR</button> </div>
+        </div>
+    </div>
+</div>
+<!--Fim modal-->
