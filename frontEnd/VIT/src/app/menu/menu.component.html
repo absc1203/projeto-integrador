@@ -29,8 +29,8 @@
                     </li>
 
                     <li class="nav-item dropdown ml-5 mr-5">
-                        <a class="nav-link dropdown-toggle text-dark font-weight-bold" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-dark font-weight-bold" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             PRODUTOS
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -38,7 +38,8 @@
                             <a class="dropdown-item" routerLink="/index">Camisetas</a>
                             <a class="dropdown-item" routerLink="/index">Produtos Diversos</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item font-weight-bold" routerLink="/index">Cadastrar produto</a>
+                            <a *ngIf='auth.logado()' class="dropdown-item font-weight-bold"
+                                routerLink="/produtos">Cadastrar produto</a>
                         </div>
                     </li>
 
@@ -55,7 +56,8 @@
                 <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-dark font-weight-bold ml-5 mr-5" routerLink="/stakeholder">QUERO APOIAR </a>
+                            <a class="nav-link text-dark font-weight-bold ml-5 mr-5" routerLink="/stakeholder">QUERO
+                                APOIAR </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark font-weight-bold" routerLink="/contato">CONTATO</a>
@@ -128,17 +130,24 @@
 
             <div class="modal-body">
                 <h3 class="mb-4 title corEntrar">Entrar</h3>
-                <div class="form-group"> <input type="text" id="name" class="form-control p-0" required
-                        style="box-shadow: none;border-radius:0px"> <label class="form-control-placeholder p-0"
-                        for="name lbl">Usuário</label> </div>
+                <div class="form-group">
+                    <input [(ngModel)]='usuarioLogin.usuario' type="text" name="usuario" id="usuario"
+                        class="form-control p-0" required style="box-shadow: none;border-radius:0px">
+                    <label class="form-control-placeholder p-0" for="name lbl">Usuário</label>
+                </div>
 
-                <div class="form-group"> <input type="password" id="pass" class="form-control p-0" required
-                        style="box-shadow: none;border-radius:0px"> <label class="form-control-placeholder p-0"
-                        for="password">Senha</label> </div> <label class="tc">By signing up I accept the <strong>Terms &
-                        Conditions</strong> of VIT | Saúde & Educação</label>
+                <div class="form-group">
+                    <input [(ngModel)]='usuarioLogin.senha' type="password" name="senha" id="senha"
+                        class="form-control p-0" required style="box-shadow: none;border-radius:0px;">
+                    <label class="form-control-placeholder p-0" for="password">Senha</label>
+                </div>
+                <label class="tc">Ao me cadastrar, eu aceito os <strong>Termos &
+                        Condições</strong> de VIT | Saúde & Educação</label>
             </div>
-            <div class="modal-footer border-0 mb-4"> <button type="button" class="btn signup col-6 col-md-6"
-                    data-dismiss="modal">ENTRAR</button> </div>
+            <div class="modal-footer border-0 mb-4">
+                <button type="button" class="btn signup col-6 col-md-6" data-dismiss="modal"
+                    (click)='logar()'>ENTRAR</button>
+            </div>
         </div>
     </div>
 </div>

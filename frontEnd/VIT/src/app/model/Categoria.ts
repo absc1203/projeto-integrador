@@ -1,4 +1,7 @@
+import { Produto } from "./Produto"
+
 export class Categoria{
     public id: number
-    public categoriaProduto: String
+    public categoriaProduto: string
+    public produto: Produto[]
 }
