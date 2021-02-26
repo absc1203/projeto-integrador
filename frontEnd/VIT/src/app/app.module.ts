@@ -19,6 +19,9 @@ import { ProdutosDiversosComponent } from './produtos-diversos/produtos-diversos
 import { IndexComponent } from './index/index.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProdutosComponent } from './produtos/produtos.component';
+import { PagamentoComponent } from './pagamento/pagamento.component';
+import { TrocaComponent } from './troca/troca.component';
+import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
 
 
 @NgModule({
@@ -36,7 +39,9 @@ import { ProdutosComponent } from './produtos/produtos.component';
     CamisetaComponent,
     ProdutosDiversosComponent,
     IndexComponent,
-    ProdutosComponent
+    ProdutosComponent,
+    TrocaComponent,
+    PoliticaPrivacidadeComponent
   ],
   imports: [
     BrowserModule,
