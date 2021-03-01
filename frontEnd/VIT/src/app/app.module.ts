@@ -15,6 +15,8 @@ import { VitMenstrualComponent } from './vit-menstrual/vit-menstrual.component';
 import { CamisetaComponent } from './camiseta/camiseta.component';
 import { ProdutosDiversosComponent } from './produtos-diversos/produtos-diversos.component';
 import { IndexComponent } from './index/index.component';
+import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
+import { QueroApoiarComponent } from './quero apoiar/quero-apoiar/quero-apoiar.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { IndexComponent } from './index/index.component';
     VitMenstrualComponent,
     CamisetaComponent,
     ProdutosDiversosComponent,
-    IndexComponent
+    IndexComponent,
+    CadastroProdutoComponent,
+    QueroApoiarComponent
   ],
   imports: [
     BrowserModule,
