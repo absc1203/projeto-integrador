@@ -107,29 +107,14 @@
     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content p-4">
-            <a href="https://www.site24x7.com/pt/tools/seletor-de-codigo-cor.html">
-                <button type="button" class="close x" data-dismiss="modal" aria-label="Close"> <span
-                        aria-hidden="true">&times;</span> </button></a>
             <div class="row modal-header border-0 mb-2">
-
-                <h5 class=" row modal-title" id="exampleModalLabel">
-
-                    <img src="../../assets/imagens/logoVIT.png" alt="">
-
-                    <a style="text-decoration: none;"
-                        href="https://www.site24x7.com/pt/tools/seletor-de-codigo-cor.html">
-                        <button style="margin-top: initial; padding-top: 1.7rem;" type="button"
-                            class="close btn btn-outline-danger d-flex " aria-label="Close" disabled='true'> <span
-                                aria-hidden="true">Cadastrar</span> </button>
-                    </a>
-
-
-                </h5>
-
+                <div class=" col-md-8 modal-title align-content-center">
+                    <img class="img-fluid" src="../../assets/imagens/logoVIT.png" alt="">
+                </div>
             </div>
 
             <div class="modal-body">
-                <h3 class="mb-4 title corEntrar">Entrar</h3>
+                <h3 class="mb-4 text-light text-center">Entrar</h3>
                 <div class="form-group">
                     <input [(ngModel)]='usuarioLogin.usuario' type="text" name="usuario" id="usuario"
                         class="form-control p-0" required style="box-shadow: none;border-radius:0px">
@@ -141,11 +126,11 @@
                         class="form-control p-0" required style="box-shadow: none;border-radius:0px;">
                     <label class="form-control-placeholder p-0" for="password">Senha</label>
                 </div>
-                <label class="tc">Ao me cadastrar, eu aceito os <strong>Termos &
-                        Condições</strong> de VIT | Saúde & Educação</label>
+                <p class="h6">Não possui cadastro? <u><a class="text-decoration-none text-light"
+                            routerLink='/cadastro' data-dismiss="modal">Cadastre-se!</a></u></p>
             </div>
-            <div class="modal-footer border-0 mb-4">
-                <button type="button" class="btn signup col-6 col-md-6" data-dismiss="modal"
+            <div class="text-center border-0 mb-4">
+                <button type="button" class="btn btn-outline-light col-6 col-md-6" data-dismiss="modal"
                     (click)='logar()'>ENTRAR</button>
             </div>
         </div>
