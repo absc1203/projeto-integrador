@@ -1,0 +1,61 @@
+.banner {
+    padding-top: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 2rem;
+    min-width: 700px;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 50px;
+    padding-bottom: 2rem;
+}
+
+.imgProd {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 100px;
+}
+
+.texto-Prod {
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.video {
+    width: 92%;
+    height: 450px;
+}
+
+.texto-video {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 2rem;
+    padding-bottom: 0;
+}
+
+.cor-bg {
+    background-color: #FEF5F7;
+}
+
+.texto-img {
+    color: red;
+    padding-top: 2rem;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.espacamento {
+    padding-top: 2rem;
+}
+
+.img-vit {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 60px;
+}

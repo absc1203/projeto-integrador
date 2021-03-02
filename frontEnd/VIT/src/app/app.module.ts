@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +19,12 @@ import { ProdutosDiversosComponent } from './produtos-diversos/produtos-diversos
 import { IndexComponent } from './index/index.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 import { QueroApoiarComponent } from './quero apoiar/quero-apoiar/quero-apoiar.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProdutosComponent } from './produtos/produtos.component';
+import { PagamentoComponent } from './pagamento/pagamento.component';
+import { TrocaComponent } from './troca/troca.component';
+import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
+
 
 @NgModule({
   declarations: [
@@ -34,13 +42,22 @@ import { QueroApoiarComponent } from './quero apoiar/quero-apoiar/quero-apoiar.c
     ProdutosDiversosComponent,
     IndexComponent,
     CadastroProdutoComponent,
-    QueroApoiarComponent
+    QueroApoiarComponent,
+    ProdutosComponent,
+    TrocaComponent,
+    PoliticaPrivacidadeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
+
   ],
-  providers: [],
+  providers: [{
+    provide: LocationStrategy,
+    useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
