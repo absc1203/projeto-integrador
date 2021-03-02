@@ -1,27 +1,29 @@
 <app-menu></app-menu>
 
-<div class="row">
-  <div class="col-sm-6">
+<div class="row d-flex justify-content-center mb-4 mt-4">
+  <div class="col-sm-4">
     <div class="card">
       <div class="card-body background">
-        <h5 class="card-title">Toda ajuda é válida!</h5>
-        <p class="card-text">
+        <h5 class="card-title text-center font-weight-bold">Toda ajuda é válida!</h5>
+        <p class="card-text text-center font-weight-bold">
           Ajudar é plantar o bem para, mais tarde, colher um mundo melhor
         </p>
-        <p>Cadastre-se e faça parte da família VIT</p>
-        <p>OU</p>
-        <P>Transferência bancária:</P>
+        <p class="text-center font-weight-bold"><a routerLink=''>Cadastre-se</a> e faça parte da família VIT</p>
+        <p class="h5 text-center font-weight-bold">OU</p>
+        <P class="text-center font-weight-bold">Transferência bancária:</P>
 
         <div class="container">
           <div class="card-deck">
             <div class="card">
-              <img class="card-img-left" src="" alt="BB" />
+              <img class="card-img-left" src="../../../assets/bb3.png"/>
               <div class="card-body">
-                <p class="card-text">
+                <p class="card-text font-weight-bold">
                     Banco: 001 -
                     Banco do Brasil
                     Agência: 0000-0
                     Conta: 000.000-0
+                    <br>
+                    <br>
                     VIT | SAÚDE E
                     EDUCAÇÃO
                     CNPJ:
@@ -32,13 +34,15 @@
             </div>
 
             <div class="card">
-              <img class="card-img-right" src="" alt="Nubank" />
+              <img class="card-img-right" src="../../../assets/nu3.png" height='90rem' alt="Nubank"/>
               <div class="card-body">
-                <p class="card-text">
+                <p class="card-text font-weight-bold">
                     Banco: 260 - NU
                     Pagamentos
                     Agência: 0001
-                    Conta: 000.000-0
+                    Conta: 0
+                    <br>
+                    <br>
                     VIT | SAÚDE E
                     EDUCAÇÃO
                     CNPJ: 00.000.000/0000-00
@@ -51,15 +55,18 @@
     </div>
   </div>
 
-  <div class="col-sm-6">
-    <div class="card">
+  <div class="col-sm-4">
+    <div class="card h-100">
       <div class="card-body background">
-        <h5 class="card-title">Seja um colaborador!</h5>
-        <p class="card-text">
+        <h5 class="card-title text-center font-weight-bold">Seja um colaborador!</h5>
+        <p class="card-text text-center font-weight-bold mb-3">
           Ser um colaborador é ajudar a construir uma sociedade ideal
         </p>
+        <p class="card-text text-center font-weight-bold">Colabore conosco e faça parte da mudança!</p>
+        <br>
+        <p class="card-text text-center font-weight-bold">Quero colaborar:</p>
 
-        <form>
+        <form class="justify-content-center mt-4">
             <div class="form-group">
               <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Nome da empresa">
             </div>
@@ -72,15 +79,18 @@
                 <input type="email" class="form-control" id="email" placeholder="E-mail">
               </div>
 
-              <div class="form-group row">
+              <div class="form-group row text-area">
                 <div class="col-sm-10">
                     <textarea class="form-control" id="colFormLabel"
-                        placeholder="Descreva o porquê gostaria de colaborar com a VIT" rows="3"></textarea>
+                        placeholder="Descreva o porquê gostaria de colaborar com a VIT" rows="5"></textarea>
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary">COLABORAR</button>
-               
+
+            <div class="row d-flex justify-content-center">
+            <button type="submit" class="btn btn-secondary">COLABORAR</button>
+          </div>
+        
           </form>
 
       </div>
