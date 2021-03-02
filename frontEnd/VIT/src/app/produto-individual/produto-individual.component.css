@@ -1,0 +1,68 @@
+.bg-color {
+    background-color: #bff7c6;
+}
+
+.cor-letras {
+    color: #50e3e3;
+}
+
+.image-camisa {
+    background-color: white;
+}
+
+.fundo-compra {
+    background-color: #bff7c6;
+}
+
+.tamanhos {
+    color: rgb(27, 24, 24);
+    font-weight: 700;
+    align-content: center;
+    display: flex;
+}
+
+label.radio {
+    cursor: pointer;
+    justify-content: center;
+}
+
+label.radio input {
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+label.radio span {
+    padding: 2px 9px;
+    border: 0.5px solid black;
+    color: black;
+    border-radius: 10px;
+    align-items: center;
+}
+
+label.radio input:checked+span {
+    border-color: black;
+    background-color: black;
+    color: #fff;
+    background-color: #50e3e3;
+}
+
+select {
+    border-color: black;
+    background-color: black;
+    color: #fff;
+    background-color: #50e3e3;
+    border-radius: 150px;
+}
+
+.alinhamento {
+    text-align: center;
+}
+
+p {
+    font-size: clamp(0.5em, 0.5em + 1vw, 1.5em);
+}
+
+h1 {
+    color: rgb(138, 132, 132);
+}
