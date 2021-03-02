@@ -14,7 +14,8 @@ body {
     border-radius: 20px;
     background: #97958f;
     box-shadow: 10px 10px 40px #00b7ff;
-    border: none
+    border: none;
+
 }
 
 .card img {
@@ -39,6 +40,8 @@ body {
 .descricao {
     font-style: italic;
     color: white;
+    font-size: 15px;
+  
     }
 
 
@@ -63,6 +66,21 @@ body {
 .fa-twitter {
     color: #55acee
 }
+.erick{
+    height: 550px;
+}
+.isabel{
+    height: 540px;
+}
+.botoesIsabel{
+    margin-top: 160px;
+}
+.botoes{
+    margin-top: 70px;
+}
+.botoesAndre{
+    margin-top: 95px;
+}
 
 
 /*
@@ -72,9 +90,9 @@ body {
 */
 
 .andre {
-    height: 1000px;
-    font-size: 17px;
-    height: fit-content;
+    
+    font-size: 16px;
+ 
 }
 
 .tamanhoImagem {
