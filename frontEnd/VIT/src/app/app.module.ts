@@ -18,6 +18,10 @@ import { CamisetaComponent } from './camiseta/camiseta.component';
 import { ProdutosDiversosComponent } from './produtos-diversos/produtos-diversos.component';
 import { IndexComponent } from './index/index.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProdutosComponent } from './produtos/produtos.component';
+import { PagamentoComponent } from './pagamento/pagamento.component';
+import { TrocaComponent } from './troca/troca.component';
+import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
 
 
 @NgModule({
@@ -34,7 +38,10 @@ import { HttpClientModule } from '@angular/common/http';
     VitMenstrualComponent,
     CamisetaComponent,
     ProdutosDiversosComponent,
-    IndexComponent
+    IndexComponent,
+    ProdutosComponent,
+    TrocaComponent,
+    PoliticaPrivacidadeComponent
   ],
   imports: [
     BrowserModule,
