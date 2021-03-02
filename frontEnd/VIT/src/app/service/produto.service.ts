@@ -17,23 +17,23 @@ export class ProdutoService {
     headers: new HttpHeaders().set('Authorization', environment.token)
   }
 
-  getAllProdutos(): Observable<Produto[]>{
+  getAllProduto(): Observable<Produto[]>{
     return this.http.get<Produto[]>('http://localhost:8080/produtos', this.token)
   }
   
-  getByIdProdutos(id: number): Observable<Produto>{
+  getByIdProduto(id: number): Observable<Produto>{
     return this.http.get<Produto>(`http://localhost:8080/produtos/${id}`, this.token)
   }
 
-  postProdutos(produto: Produto): Observable<Produto>{
+  postProduto(produto: Produto): Observable<Produto>{
     return this.http.post<Produto>('http://localhost:8080/produtos', produto, this.token)
   }
 
-  putProdutos(produto: Produto): Observable<Produto>{
+  putProduto(produto: Produto): Observable<Produto>{
     return this.http.put<Produto>('http://localhost:8080/produtos', produto, this.token)
   }
 
-  deleteprodutos(id: number){
+  deleteProduto(id: number){
     return this.http.delete(`http://localhost:8080/produtos/${id}`, this.token)
   }
 }

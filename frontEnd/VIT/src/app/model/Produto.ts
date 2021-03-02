@@ -9,5 +9,5 @@ export class Produto{
     public qtProduto: number
     public imgProduto: string
     public categoria: Categoria
-    // public usuario: Usuario
+    public usuario: Usuario
 }
