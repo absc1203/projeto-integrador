@@ -1,4 +1,3 @@
-import { from } from "rxjs"
 import {Categoria} from "./Categoria"
 
 export class Produto{
@@ -8,5 +7,5 @@ export class Produto{
     public precoProduto: number
     public qtProduto: number
     public imgProduto: string
-    public categoria: Categoria[]
+    public categoria: Categoria
 }

@@ -7,11 +7,13 @@ import { CompraIndividualComponent } from './compra-individual/compra-individual
 import { ContatoComponent } from './contato/contato.component';
 import { IndexComponent } from './index/index.component';
 import { ProdutosDiversosComponent } from './produtos-diversos/produtos-diversos.component';
+import { ProdutosComponent } from './produtos/produtos.component';
 import { PropositoComponent } from './proposito/proposito.component';
 import { StakeholderComponent } from './stakeholder/stakeholder.component';
 
+
 const routes: Routes = [
-  {path:'',redirectTo:'cadastro',pathMatch:'full'},
+  {path:'',redirectTo:'index',pathMatch:'full'},
   {path: 'index', component: IndexComponent},
   {path: 'cadastro', component: CadastroComponent},
   {path: 'carrinho', component: CarrinhoComponent },
@@ -20,7 +22,8 @@ const routes: Routes = [
   {path: 'produtos-diversos', component: ProdutosDiversosComponent},
   {path: 'proposito', component: PropositoComponent},
   {path: 'stakeholder', component: StakeholderComponent},
-  {path: 'camiseta', component: CamisetaComponent}
+  {path: 'camiseta', component: CamisetaComponent},
+  {path: 'produtos', component: ProdutosComponent}
 
 ];
 

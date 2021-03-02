@@ -1,0 +1,16 @@
+.corFundo{
+    background-color : #dcedc8;
+}
+
+.border-input {
+    border-radius: 2rem;
+}
+
+.border-button {
+    border-radius: 2rem;
+}
+
+.padding-2 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
