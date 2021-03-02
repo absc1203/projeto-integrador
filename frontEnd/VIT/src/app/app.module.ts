@@ -18,6 +18,7 @@ import { CamisetaComponent } from './camiseta/camiseta.component';
 import { ProdutosDiversosComponent } from './produtos-diversos/produtos-diversos.component';
 import { IndexComponent } from './index/index.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProdutoIndividualComponent } from './produto-individual/produto-individual.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     VitMenstrualComponent,
     CamisetaComponent,
     ProdutosDiversosComponent,
-    IndexComponent
+    IndexComponent,
+    ProdutoIndividualComponent
   ],
   imports: [
     BrowserModule,
