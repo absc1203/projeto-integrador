@@ -20,16 +20,12 @@ export class CadastroProdutoComponent implements OnInit {
   tiposCategoria: string
   categoria: Categoria = new Categoria()
   listaCategorias: Categoria[]
-  idUsuario = environment.id
-  idCategoria: number
-  usuario: Usuario = new Usuario()
+ 
 
 
   constructor(
     private router: Router,
-    private produtoService: ProdutoService,
-    private authService: AuthService,
-    private categoriaService: CategoriaService
+    private ProdutoService: ProdutoService
   ) { }
 
   ngOnInit() {
@@ -37,38 +33,30 @@ export class CadastroProdutoComponent implements OnInit {
       this.router.navigate(['/index'])
     }
 
-    // this.getAllProduto()
-  }}
+    this.findAllProdutos()
+  }
 
-  // getAllProduto() {
-  //   this.produtoService.getAllProdutos().subscribe((resp: Produto[]) => {
-  //     this.listaProdutos = resp
-  //   })
-  // }
-
-  // findByIdCategoria() {
-  //   this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) => {
-  //     this.categoria = resp
-  //   })
-  // }
-
-  // getAllCategorias() {
-  //   this.categoriaService.getAllCategorias().subscribe((resp: Categoria[]) => {
-  //     this.listaCategorias
-  //   })
-  // }
+  findAllProdutos() {
+    this.ProdutoService.getAllProdutos().subscribe((resp: Produto[]) => {
+      this.listaProdutos = resp
+    })
+  }
 
 
-  // cadastroProduto() {
-  //   this.usuario.id = this.idUsuario
-  //   this.produto.usuario = this.usuario
 
-  //   this.produtoService.postProdutos(this.produto).subscribe((resp: Produto) => {
-  //     this.produto = resp
+  cadastrar() {
 
-  //     alert('Produto cadastrado com sucesso!')
-  //     this.produto = new Produto()
-  //     this.getAllProduto()
-  //   })
-  // }
+    this.ProdutoService.postProdutos(this.produto).subscribe((resp: Produto) => {
+      this.produto = resp
+    
+      alert('Produto cadastrado com sucesso!')
+      this.findAllProdutos()
+
+      this.produto = new Produto()
+    })
+  }
+
+
+
+}
 

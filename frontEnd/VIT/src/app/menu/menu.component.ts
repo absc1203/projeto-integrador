@@ -19,7 +19,6 @@ export class MenuComponent implements OnInit {
     public auth: AuthService,
     private router: Router
   ) {
-    environment.token = ''
   }
 
   ngOnInit() {
