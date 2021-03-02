@@ -39,7 +39,9 @@
                             <a class="dropdown-item" routerLink="/produtos-diversos">Produtos Diversos</a>
                             <div class="dropdown-divider"></div>
                             <a *ngIf='auth.logado()' class="dropdown-item font-weight-bold"
-                                routerLink="/cadastro-produto">Cadastrar produto</a>
+                                routerLink='/cadastro-produto'>Cadastrar produto</a>
+                            <a *ngIf='auth.logado()' class="dropdown-item font-weight-bold"
+                                routerLink='/categoria'>Cadastrar categoria</a>
                         </div>
                     </li>
 
@@ -126,8 +128,8 @@
                         class="form-control p-0" required style="box-shadow: none;border-radius:0px;">
                     <label class="form-control-placeholder p-0" for="password">Senha</label>
                 </div>
-                <p class="h6">Não possui cadastro? <u><a class="text-decoration-none text-light"
-                            routerLink='/cadastro' data-dismiss="modal">Cadastre-se!</a></u></p>
+                <p class="h6">Não possui cadastro? <u><a class="text-decoration-none text-light" routerLink='/cadastro'
+                            data-dismiss="modal">Cadastre-se!</a></u></p>
             </div>
             <div class="text-center border-0 mb-4">
                 <button type="button" class="btn btn-outline-light col-6 col-md-6" data-dismiss="modal"

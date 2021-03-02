@@ -4,7 +4,11 @@ import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.co
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { CamisetaComponent } from './camiseta/camiseta.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
+import { CategoriaComponent } from './categoria/categoria.component';
 import { ContatoComponent } from './contato/contato.component';
+import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
+import { ProdutosDeleteComponent } from './delete/produtos-delete/produtos-delete.component';
+import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { IndexComponent } from './index/index.component';
 import { PagamentoComponent } from './pagamento/pagamento.component';
 import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
@@ -35,7 +39,12 @@ const routes: Routes = [
   {path: 'pagamento', component: PagamentoComponent},
   {path: 'produto-individual', component: ProdutoIndividualComponent},
   {path: 'troca', component: TrocaComponent},
-  {path: 'vit-menstrual', component: VitMenstrualComponent}
+  {path: 'vit-menstrual', component: VitMenstrualComponent},
+  {path: 'categoria', component: CategoriaComponent},
+  {path: 'categoria-delete/:id', component: CategoriaDeleteComponent},
+  {path: 'categoria-edit/:id', component: CategoriaEditComponent},
+  {path: 'produtos-edit/:id', component: ProdutosDeleteComponent},
+  {path: 'produtos-delete/:id', component: ProdutosDeleteComponent}
 ];
 
 @NgModule({

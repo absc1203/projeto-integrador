@@ -12,4 +12,6 @@ export class PropositoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+
 }

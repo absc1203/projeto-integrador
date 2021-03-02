@@ -24,6 +24,11 @@ import { ProdutosComponent } from './produtos/produtos.component';
 import { PagamentoComponent } from './pagamento/pagamento.component';
 import { TrocaComponent } from './troca/troca.component';
 import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
+import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
+import { ProdutosEditComponent } from './edit/produtos-edit/produtos-edit.component';
+import { ProdutosDeleteComponent } from './delete/produtos-delete/produtos-delete.component';
 
 
 @NgModule({
@@ -47,7 +52,12 @@ import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-pr
     PagamentoComponent,
     QueroApoiarComponent,
     CadastroProdutoComponent,
-    VitMenstrualComponent
+    VitMenstrualComponent,
+    CategoriaComponent,
+    CategoriaEditComponent,
+    CategoriaDeleteComponent,
+    ProdutosEditComponent,
+    ProdutosDeleteComponent
   ],
   imports: [
     BrowserModule,

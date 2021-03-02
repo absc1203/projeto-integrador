@@ -15,5 +15,44 @@ import { ProdutoService } from '../service/produto.service';
 })
 export class CadastroProdutoComponent implements OnInit {
 
+  produto: Produto = new Produto()
+  listaProdutos: Produto[]
+  tiposCategoria: string
+  categoria: Categoria = new Categoria()
+  listaCategorias: Categoria[]
  
+
+
+  constructor(
+    private router: Router,
+    private ProdutoService: ProdutoService
+  ) { }
+
+  ngOnInit() {
+    if (environment.token == '') {
+      this.router.navigate(['/index'])
+    }
+
+    this.findAllProdutos()
+  }
+
+  findAllProdutos() {
+    this.ProdutoService.getAllProduto().subscribe((resp: Produto[]) => {
+      this.listaProdutos = resp
+    })
+  }
+
+
+  cadastrar() {
+
+    this.ProdutoService.postProduto(this.produto).subscribe((resp: Produto) => {
+      this.produto = resp
+    
+      alert('Produto cadastrado com sucesso!')
+      this.findAllProdutos()
+
+      this.produto = new Produto()
+    })
+  }
+}
 
