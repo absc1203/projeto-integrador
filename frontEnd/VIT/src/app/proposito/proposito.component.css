@@ -5,28 +5,22 @@
     font-family: 'Noto Sans', sans-serif
 }
 
-html,
-body {
-    height: 100%
-}
-
 body {
     display: grid;
-    place-items: center;
     background: #eee
 }
 
 .card {
     border-radius: 20px;
-    background: #eeeeee;
-    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
+    background: #97958f;
+    box-shadow: 10px 10px 40px #00b7ff;
     border: none
 }
 
 .card img {
     border-radius: 40%;
     background: linear-gradient(145deg, #fd0000, #ffffff);
-    box-shadow: 20px 20px 60px #02abc8, -20px -20px 60px #08ec13
+    box-shadow: 15px 15px 40px #02abc8, -15px -15px 40px #08ec13
 }
 
 .neo-button {
@@ -41,6 +35,11 @@ body {
     border-radius: 50%;
     background: linear-gradient(145deg, #1ebb2c, #10cfb6);
 }
+
+.descricao {
+    font-style: italic;
+    color: white;
+    }
 
 .devImage {}
 
@@ -63,4 +62,76 @@ body {
 
 .fa-twitter {
     color: #55acee
+}
+
+
+/*
+------------------------------------------------------------------------------------------------
+
+
+*/
+.erick{
+
+
+
+}
+.andre {
+    height: 1000px;
+    font-size: 17px;
+    height: fit-content;
+}
+
+.tamanhoImagem {
+    width: 2rem !important;
+    margin-left: 4rem;
+    height: 2.8rem !important;
+}
+
+.h-100 {
+    height: 100px;
+}
+
+.w-50 {
+    width: 10px !important;
+}
+
+.textoProposito {
+    margin-top: 50px !important;
+}
+
+.linha {
+    margin-top: 200px;
+    margin-bottom: -175px;
+    color: rgb(65, 243, 11);
+}
+
+.devs {
+    margin-top: 250px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.devImage {
+    height: 500px;
+}
+
+.proposito {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.trabalhos {
+    margin-left: 150px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fechamentoTag {
+    width: 50px;
+    height: 50px;
+}
+
+.developer-color {
+    color: rgb(151, 224, 40);
 }
