@@ -12,7 +12,6 @@ import { StakeholderComponent } from './stakeholder/stakeholder.component';
 import { ContatoComponent } from './contato/contato.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
-import { CompraIndividualComponent } from './compra-individual/compra-individual.component';
 import { VitMenstrualComponent } from './vit-menstrual/vit-menstrual.component';
 import { CamisetaComponent } from './camiseta/camiseta.component';
 import { ProdutosDiversosComponent } from './produtos-diversos/produtos-diversos.component';
@@ -37,7 +36,6 @@ import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-pr
     ContatoComponent,
     CadastroComponent,
     CarrinhoComponent,
-    CompraIndividualComponent,
     VitMenstrualComponent,
     CamisetaComponent,
     ProdutosDiversosComponent,
@@ -45,7 +43,11 @@ import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-pr
     ProdutoIndividualComponent,
     ProdutosComponent,
     TrocaComponent,
-    PoliticaPrivacidadeComponent
+    PoliticaPrivacidadeComponent,
+    PagamentoComponent,
+    QueroApoiarComponent,
+    CadastroProdutoComponent,
+    VitMenstrualComponent
   ],
   imports: [
     BrowserModule,

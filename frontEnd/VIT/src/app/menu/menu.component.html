@@ -25,7 +25,7 @@
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-link text-dark font-weight-bold" href="#">PROPÓSITO</a>
+                        <a class="nav-link text-dark font-weight-bold" routerLink='/proposito'>PROPÓSITO</a>
                     </li>
 
                     <li class="nav-item dropdown ml-5 mr-5">
@@ -34,12 +34,12 @@
                             PRODUTOS
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" routerLink="/index">Vit Menstrual</a>
-                            <a class="dropdown-item" routerLink="/index">Camisetas</a>
-                            <a class="dropdown-item" routerLink="/index">Produtos Diversos</a>
+                            <a class="dropdown-item" routerLink="/vit-menstrual">Vit Menstrual</a>
+                            <a class="dropdown-item" routerLink="/camiseta">Camisetas</a>
+                            <a class="dropdown-item" routerLink="/produtos-diversos">Produtos Diversos</a>
                             <div class="dropdown-divider"></div>
                             <a *ngIf='auth.logado()' class="dropdown-item font-weight-bold"
-                                routerLink="/produtos">Cadastrar produto</a>
+                                routerLink="/cadastro-produto">Cadastrar produto</a>
                         </div>
                     </li>
 

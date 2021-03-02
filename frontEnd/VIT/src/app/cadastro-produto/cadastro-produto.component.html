@@ -5,44 +5,48 @@
     <div class="col-md-11">
     <h4 class="text-center">CADASTRO DE PRODUTO</h4>
 
-    <div class="form-group row mt-4">
-        <label for="colFormLabel" class="col-sm-2 col-form-label">NOME:</label>
-        <div class="col-sm-10">
-            <input type="nome" class="form-control" id="colFormLabel" placeholder="Insira o nome do produto" />
-        </div>
+    <!-- <div class="form-group">
+        <input [(ngModel)]='produto.nomeProduto' type="text" class="form-control" id='nome' placeholder="nome">
+        <input [(ngModel)]='produto.descricaoProduto' type="text" class="form-control" id='descricao'
+            placeholder="descricao">
+        <input [(ngModel)]='produto.precoProduto' type="number" class="form-control" id='preco' placeholder="preco">
+        <input [(ngModel)]='produto.qtProduto' type="number" class="form-control" id='quantidade'
+            placeholder="quantidade">
+        <input [(ngModel)]='produto.imgProduto' type="text" class="form-control" id='imagem' placeholder="imagem">
     </div>
-
-    <div class="form-group row">
-        <label for="colFormLabel" class="col-sm-2 col-form-label">DESCRIÇÃO:</label>
+    <div class="btn btn-danger" (click)='cadastroProduto()'>CADASTRAR</div> -->
+        
+    <!-- <div class="form-group row">
+        <label for="descricaoProduto" class="col-sm-2 col-form-label">DESCRIÇÃO:</label>
         <div class="col-sm-10">
-            <textarea class="form-control" id="colFormLabel"
+            <textarea [(ngModel)]='produto.descricaoProduto' class="form-control" id="descricaoProduto"
                 placeholder="Insira a descrição do produto" rows="3"></textarea>
         </div>
-    </div>
+    </div> -->
 
-    <div class="form-group row">
-        <label for="colFormLabel" class="col-sm-2 col-form-label">PREÇO:</label>
+    <!-- <div class="form-group row">
+        <label for="precoProduto" class="col-sm-2 col-form-label">PREÇO:</label>
         <div class="col-sm-10">
-            <input type="preco" class="form-control" id="colFormLabel" placeholder="Insira o valor do produto" />
+            <input [(ngModel)]='produto.precoProduto' type="number" class="form-control" id="precoProduto" placeholder="Insira o valor do produto" />
         </div>
-    </div>
+    </div> -->
 
-    <div class="form-group row">
-        <label for="colFormLabel" class="col-sm-2 col-form-label">IMAGEM:</label>
+    <!-- <div class="form-group row">
+        <label for="imgProduto" class="col-sm-2 col-form-label">IMAGEM:</label>
         <div class="col-sm-10">
-            <input type="imagem" class="form-control" id="colFormLabel" placeholder="Insira o link da imagem" />
+            <input [(ngModel)]='produto.imgProduto' type="text" class="form-control" id="imgProduto" placeholder="Insira o link da imagem" />
         </div>
-    </div>
+    </div> -->
 
-    <div class="form-group row">
-        <label for="colFormLabel" class="col-sm-2 col-form-label">QUANTIDADE:</label>
+    <!-- <div class="form-group row">
+        <label for="qtProduto" class="col-sm-2 col-form-label">QUANTIDADE:</label>
         <div class="col-sm-10">
-            <input type="quantidade" class="form-control" id="colFormLabel"
+            <input [(ngModel)]='produto.qtProduto' type="number" class="form-control" id="qtProduto"
                 placeholder="Insira a quantidade de estoque" />
         </div>
-    </div>
+    </div> -->
 
-    <div class="form-group row">
+    <!-- <div class="form-group row">
         <label for="colFormLabel" class="col-sm-2 col-form-label">CATEGORIA:</label>
         <div class="col-sm-10">
 
@@ -52,11 +56,11 @@
             </select>
 
         </div>
-    </div>
+    </div> -->
 
-<div class="row d-flex justify-content-center mb-4">
-    <button type="submit" class="btn text-weight-bold btn-color text-white">CADASTRAR</button>
-</div>
+<!-- <div class="row d-flex justify-content-center mb-4">
+    <div class="btn text-weight-bold btn-color text-white" (click)='cadastrar()'>CADASTRAR</div>
+</div> -->
 
 </div>
  </div>
