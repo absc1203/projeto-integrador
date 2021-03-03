@@ -64,17 +64,17 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark font-weight-bold" routerLink="/contato">CONTATO</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
+                        <li class="nav-item data-dismiss='modal'">
+                            <a class="nav-link" href="#" data-dismiss='modal'>
                                 <img type="button" class="btn btn-primary" data-toggle="modal"
-                                    data-target="#exampleModal" class="img-user" src="../../assets/imagens/user.webp"
+                                    data-target="#exampleModal" data-dismiss='modal' class="img-user" src="../../assets/imagens/user.webp"
                                     alt="">
                             </a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link " routerLink='/carrinho'>
-                                <img class="img-compras" src="../../assets/imagens/carrinho.png" alt="">
+                        <li class="nav-item data-dismiss='modal'">
+                            <a class="nav-link " routerLink='/carrinho' data-dismiss='modal'>
+                                <img class="img-compras" data-dismiss='modal' src="../../assets/imagens/carrinho.png" alt="">
                             </a>
                         </li>
 
@@ -94,7 +94,7 @@
 
 
 <!--Inicio Segunda linha menu-->
-<div class="conteiner-fluid">
+<div class="conteiner-fluid" data-dismiss='modal'>
     <div class="container-fluid"></div>
     <div class="conteiner-fluid bg-menu row ">
 

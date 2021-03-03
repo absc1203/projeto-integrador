@@ -20,12 +20,12 @@ export class CadastroProdutoComponent implements OnInit {
   tiposCategoria: string
   categoria: Categoria = new Categoria()
   listaCategorias: Categoria[]
- 
-
+  idCategoria: number
 
   constructor(
     private router: Router,
-    private ProdutoService: ProdutoService
+    private produtoService: ProdutoService,
+    private categoriaService: CategoriaService
   ) { }
 
   ngOnInit() {
@@ -33,26 +33,47 @@ export class CadastroProdutoComponent implements OnInit {
       this.router.navigate(['/index'])
     }
 
-    this.findAllProdutos()
+    this.getAllProdutos()
+    this.getAllCategorias()
   }
 
-  findAllProdutos() {
-    this.ProdutoService.getAllProduto().subscribe((resp: Produto[]) => {
+  getAllCategorias() {
+    this.categoriaService.getAllCategorias().subscribe((resp: Categoria[]) => {
+      this.listaCategorias = resp
+    })
+  }
+
+  findByIdCategoria() {
+    this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) => {
+      this.categoria = resp
+    })
+  }
+
+
+  getAllProdutos() {
+    this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
       this.listaProdutos = resp
     })
   }
 
+  findAllProdutos() {
+    this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
+      this.listaProdutos = resp
+    })
+  }
 
   cadastrar() {
+    this.categoria.id = this.idCategoria
+    this.produto.categoria = this.categoria
 
-    this.ProdutoService.postProduto(this.produto).subscribe((resp: Produto) => {
+    this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
       this.produto = resp
-    
+
       alert('Produto cadastrado com sucesso!')
       this.findAllProdutos()
-
       this.produto = new Produto()
     })
   }
 }
+
 
