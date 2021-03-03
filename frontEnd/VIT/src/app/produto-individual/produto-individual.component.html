@@ -1,64 +1,66 @@
-<div class="container-fluid bg-color">
-    <div class="row d-flex justify-content-center">
+<app-menu></app-menu>
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center p-4">
         <div class="col-md-10">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
 
-                    <div class="row text-center p-4 justify-content-center">
-                        <img class="image-camisa img-fluid" src="../../assets/imagens/camisaAzulclaro.png" />
+                    <div class="row text-center p-4 justify-content-center bg-light border">
+                        <img class="img-fluid" src="../../assets/imagens/camisaAzulclaro.png" />
                     </div>
-
                 </div>
                 <div class="col-md-6">
 
-                    <div class="fundo-compra p-4">
+                    <div class="container">
 
-                        <div class="row justify-content-center mt-4 mb-3 ">
+                        <div class="justify-items-center">
+                            <p class="h2">CAMISETA VIDA NA ÁGUA</p>
+                            <p class="fs-6 text-muted">CÓDIGO: 2021-0232</p>
+                            <p class="h4">R$ 24,99</p>
 
-                            <h5 class="text-uppercase mt-3">
-                                Camiseta Feminina ODS 13
-
-                                <span class="tamanhos mt-3 justify-content-center">R$ 24,99</span>
-
-                                <span class="tamanhos mt-3 justify-content-center text-muted ">CODIGO:2021-02-021</span>
-
-                            </h5>
 
                         </div>
 
-                        <div class=" mb-5 mt-3 ">
-                            <h6 class="mt-3 d-flex justify-content-center">ESCOLHA UM TAMANHO:</h6>
-                            <div class="mt-3 d-flex justify-content-center">
-                                <label class="radio"> <input type="radio" name="size" value="S" checked><span>P</span> </label>
-
-                                <label class="radio"> <input type="radio" name="size" value="M"> <span>M</span> </label>
-
-                                <label class="radio"> <input type="radio" name="size" value="L"> <span>G</span> </label> <label class="radio"> <input type="radio" name="size" value="XL"> <span>GG</span> </label> <label class="radio"> <input type="radio" name="size" value="XXL"> <span>EGG</span> </label>
-                                <select name="QUANTIDADE">
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
-                                    <option value="">5</option>
-                                    <option value="">6</option>
-                                    <option value="">7</option>
-                                    <option value="">8</option>
-                                    <option value="">9</option>
-                                    <option value="">10</option>
-    
-                                </select>
+                        <div class=" mb-4 mt-4">
+                            <h6 class="mt-4 d-flex">ESCOLHA UM TAMANHO:</h6>
+                            <div class="mt-3 d-flex">
+                                <button class="btn  quantity-controla btn-sm mr-1">P</button>
+                                <button class="btn  quantity-controla btn-sm mr-1">M</button>
+                                <button class="btn  quantity-controla btn-sm mr-1">G</button>
+                                <button class="btn  quantity-controla btn-sm mr-1">GG</button>
+                                <button class="btn  quantity-controla btn-sm mr-1">EGG</button>
                             </div>
-
-
                         </div>
-                        <div class=" row d-flex justify-content-center align-content-center">
+
+                        <div class="quantity-control" data-quantity="">
+                            <button class="quantity-btn" data-quantity-minus="">
+                                <svg viewBox="0 0 409.6 409.6">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M392.533,187.733H17.067C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h375.467 c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </button>
+                            <input type="number" class="quantity-input" data-quantity-target="" value="1" step="1"
+                                min="1" max="" name="quantity">
+                            <button class="quantity-btn" data-quantity-plus=""><svg viewBox="0 0 426.66667 426.66667">
+                                    <path 
+                                        d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"/>
+                                </svg>
+                            </button>
+                        </div>
+
+
+                        <!-- <div class=" row d-flex justify-content-center align-content-center">
 
                             <button class="btn btn-outline-secondary text-uppercase ">Calcular frete</button>
 
                             <button class="btn btn-outline-secondary text-uppercase ml-4 px-4">COMPRAR</button>
 
 
-                        </div>
+                        </div> -->
 
 
 
@@ -67,10 +69,13 @@
                     </div>
 
                 </div>
+
+
             </div>
         </div>
     </div>
 </div>
+
 
 <div style="background: #8dcc91;" class="container-fluid ">
     <div class="container-fluid bg-menu"></div>
@@ -81,8 +86,11 @@
 </div>
 
 <h1 class="alinhamento">DESCRIÇÃO DO PRODUTO</h1>
-<p class=" h3 alinhamento"> MODELO Nº: 2021-02-021- Azul ciano VENDIDO POR: VIT | Saúde e Educação. <br> Modelagem Manga Curta, estampada com simbulo da ODS 17. Viscose Camiseta feminina desenvolvida em malha de viscose com elasticidade. Possui modelagem ampla com caimento solto.
-    A parte frontal tem estampa da ODS enquanto a parte posterior não tem estampa. As mangas são curtas e o decote é redondo. Invista nas estampas divertidas! Composição: 96% Viscose 4% Elastano.
+<p class=" h3 alinhamento"> MODELO Nº: 2021-02-021- Azul ciano VENDIDO POR: VIT | Saúde e Educação. <br> Modelagem Manga
+    Curta, estampada com simbulo da ODS 17. Viscose Camiseta feminina desenvolvida em malha de viscose com elasticidade.
+    Possui modelagem ampla com caimento solto.
+    A parte frontal tem estampa da ODS enquanto a parte posterior não tem estampa. As mangas são curtas e o decote é
+    redondo. Invista nas estampas divertidas! Composição: 96% Viscose 4% Elastano.
 </p>
 <div style=" background: #8dcc91; " class="container-fluid ">
     <div class="container-fluid bg-menu "></div>
