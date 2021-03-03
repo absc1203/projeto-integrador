@@ -9,6 +9,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 import { ProdutosDeleteComponent } from './delete/produtos-delete/produtos-delete.component';
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
+import { ProdutosEditComponent } from './edit/produtos-edit/produtos-edit.component';
 import { IndexComponent } from './index/index.component';
 import { PagamentoComponent } from './pagamento/pagamento.component';
 import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
@@ -43,8 +44,9 @@ const routes: Routes = [
   {path: 'categoria', component: CategoriaComponent},
   {path: 'categoria-delete/:id', component: CategoriaDeleteComponent},
   {path: 'categoria-edit/:id', component: CategoriaEditComponent},
-  {path: 'produtos-edit/:id', component: ProdutosDeleteComponent},
+  {path: 'produtos-edit/:id', component: ProdutosEditComponent},
   {path: 'produtos-delete/:id', component: ProdutosDeleteComponent}
+
 ];
 
 @NgModule({

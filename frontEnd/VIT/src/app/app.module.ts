@@ -17,7 +17,7 @@ import { CamisetaComponent } from './camiseta/camiseta.component';
 import { ProdutosDiversosComponent } from './produtos-diversos/produtos-diversos.component';
 import { IndexComponent } from './index/index.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
-import { QueroApoiarComponent } from './quero apoiar/quero-apoiar/quero-apoiar.component';
+
 import { HttpClientModule } from '@angular/common/http';
 import { ProdutoIndividualComponent } from './produto-individual/produto-individual.component';
 import { ProdutosComponent } from './produtos/produtos.component';
@@ -50,7 +50,7 @@ import { ProdutosDeleteComponent } from './delete/produtos-delete/produtos-delet
     TrocaComponent,
     PoliticaPrivacidadeComponent,
     PagamentoComponent,
-    QueroApoiarComponent,
+
     CadastroProdutoComponent,
     VitMenstrualComponent,
     CategoriaComponent,

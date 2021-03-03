@@ -1,26 +1,5 @@
-.color-input {
-    background-color: rgb(241, 235, 235);
-    color: rgb(37, 37, 37);
-}
+.background{
 
-.corLink{
-    color: #9CCB90;
-}
+    background-color: #EDF5E7;
 
-.text-align-right {
-    text-align: right;
-}
-
-.padding-0 {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.border-input-1 {
-    border-radius: 2rem;
-}
-
-.padding-3 {
-    padding-left: 20px;
-    padding-right: 20px;
 }
