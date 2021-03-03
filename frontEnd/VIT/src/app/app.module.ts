@@ -42,14 +42,10 @@ import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-pr
     CamisetaComponent,
     ProdutosDiversosComponent,
     IndexComponent,
-    CadastroProdutoComponent,
-    QueroApoiarComponent,
-
     ProdutoIndividualComponent,
     ProdutosComponent,
     TrocaComponent,
     PoliticaPrivacidadeComponent
-
   ],
   imports: [
     BrowserModule,

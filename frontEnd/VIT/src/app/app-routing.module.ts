@@ -12,6 +12,7 @@ import { PropositoComponent } from './proposito/proposito.component';
 import { StakeholderComponent } from './stakeholder/stakeholder.component';
 
 
+
 const routes: Routes = [
   {path:'',redirectTo:'index',pathMatch:'full'},
   {path: 'index', component: IndexComponent},
@@ -23,8 +24,7 @@ const routes: Routes = [
   {path: 'proposito', component: PropositoComponent},
   {path: 'stakeholder', component: StakeholderComponent},
   {path: 'camiseta', component: CamisetaComponent},
-  {path: 'produtos', component: ProdutosComponent}
-
+  {path: 'produtos', component: ProdutosComponent},
 ];
 
 @NgModule({
