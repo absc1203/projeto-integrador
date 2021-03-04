@@ -9,7 +9,7 @@ export class ProdutoIndividualComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

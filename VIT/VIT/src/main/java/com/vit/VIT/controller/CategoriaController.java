@@ -21,7 +21,7 @@ import com.vit.VIT.repository.CategoriaRepository;
 
 @RestController
 @RequestMapping("/categorias")
-@CrossOrigin("*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class CategoriaController {
 
 	
