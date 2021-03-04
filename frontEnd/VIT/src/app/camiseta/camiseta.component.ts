@@ -41,4 +41,15 @@ export class CamisetaComponent implements OnInit {
       this.categoria = resp
     })
   }
+
+  cadastrar() {
+    this.ProdutoService.postProduto(this.produto).subscribe((resp: Produto) => {
+      this.produto = resp
+    
+      alert('Produto cadastrado com sucesso!')
+      this.findAllProdutos()
+
+      this.produto = new Produto()
+    })
+  }
 }
