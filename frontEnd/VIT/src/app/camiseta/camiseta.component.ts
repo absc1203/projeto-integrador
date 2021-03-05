@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
@@ -15,6 +15,7 @@ export class CamisetaComponent implements OnInit {
 
   produto: Produto = new Produto()
   listaProdutos: Produto[]
+  listaCamisetas: Produto[]
   tiposCategoria: string
   categoria: Categoria = new Categoria()
   listaCategorias: Categoria[]
@@ -33,6 +34,7 @@ export class CamisetaComponent implements OnInit {
   findAllProdutos() {
     this.ProdutoService.getAllProduto().subscribe((resp: Produto[]) => {
       this.listaProdutos = resp
+      this.listaCamisetas = this.listaProdutos.filter(element => element.categoria.id == 1)
     })
   }
 

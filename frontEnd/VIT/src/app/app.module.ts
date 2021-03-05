@@ -20,7 +20,6 @@ import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.co
 
 import { HttpClientModule } from '@angular/common/http';
 import { ProdutoIndividualComponent } from './produto-individual/produto-individual.component';
-import { ProdutosComponent } from './produtos/produtos.component';
 import { PagamentoComponent } from './pagamento/pagamento.component';
 import { TrocaComponent } from './troca/troca.component';
 import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
@@ -46,7 +45,6 @@ import { ProdutosDeleteComponent } from './delete/produtos-delete/produtos-delet
     ProdutosDiversosComponent,
     IndexComponent,
     ProdutoIndividualComponent,
-    ProdutosComponent,
     TrocaComponent,
     PoliticaPrivacidadeComponent,
     PagamentoComponent,
