@@ -45,7 +45,12 @@ import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-pr
     ProdutoIndividualComponent,
     ProdutosComponent,
     TrocaComponent,
-    PoliticaPrivacidadeComponent
+    PoliticaPrivacidadeComponent,
+    PagamentoComponent,
+    QueroApoiarComponent,
+    CadastroProdutoComponent
+
+
   ],
   imports: [
     BrowserModule,

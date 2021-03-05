@@ -20,8 +20,6 @@ body {
 
 .card img {
     border-radius: 40%;
-    background: linear-gradient(145deg, #fd0000, #ffffff);
-    box-shadow: 15px 15px 40px #02abc8, -15px -15px 40px #08ec13
 }
 
 .neo-button {
@@ -67,7 +65,7 @@ body {
     color: #55acee
 }
 .erick{
-    height: 550px;
+    height: 560px;
 }
 .isabel{
     height: 540px;
@@ -114,13 +112,12 @@ body {
 }
 
 .linha {
-    margin-top: 200px;
-    margin-bottom: -175px;
+    margin-top: 65px;
     color: rgb(65, 243, 11);
 }
 
 .devs {
-    margin-top: 250px;
+    margin-top: 50px;
     font-weight: bold;
     font-size: 40px;
 }
@@ -136,7 +133,6 @@ body {
 }
 
 .trabalhos {
-    margin-left: 150px;
     font-size: 30px;
     font-weight: bold;
 }
@@ -148,4 +144,16 @@ body {
 
 .developer-color {
     color: rgb(151, 224, 40);
+}
+
+.icones-andre{
+
+margin-top: 94px;
+
+}
+
+.icones-isabel{
+
+margin-top: 157px;
+
 }
