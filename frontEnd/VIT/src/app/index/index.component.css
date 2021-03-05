@@ -14,6 +14,28 @@
     height: 2px;
 }
 
+.text-color {
+    color: rgb(0, 0, 0)
+}
+
+.background-color {
+    color: green;
+}
+
+.img1Carosel {
+    height: 600px;
+}
+
+.mtCarousel {
+    margin-top: -100px;
+}
+
+.txtCarousel {
+    font-size: 17px;
+    margin-top: 25px;
+    font-family: cursive;
+}
+
 .carousel-left {
     width: 75%;
     float: left;
