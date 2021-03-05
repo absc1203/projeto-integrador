@@ -2,6 +2,12 @@
          background-color: #8dcc91;
      }
      
+     .logo {
+         min-width: 2rem;
+         min-height: 1rem;
+         margin-left: 5px;
+     }
+     
      .img-home {
          color: black;
          height: 3rem;
@@ -50,7 +56,7 @@
          align-items: center;
      }
      
-     .a {
+     u .a {
          text-decoration: none;
      }
      
@@ -159,4 +165,8 @@
      .x:focus {
          outline: 0;
          box-shadow: none !important;
+     }
+     
+     li {
+         list-style-type: none;
      }
