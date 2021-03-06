@@ -15,7 +15,6 @@ import { PagamentoComponent } from './pagamento/pagamento.component';
 import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
 import { ProdutoIndividualComponent } from './produto-individual/produto-individual.component';
 import { ProdutosDiversosComponent } from './produtos-diversos/produtos-diversos.component';
-import { ProdutosComponent } from './produtos/produtos.component';
 import { PropositoComponent } from './proposito/proposito.component';
 import { StakeholderComponent } from './stakeholder/stakeholder.component';
 import { TrocaComponent } from './troca/troca.component';
@@ -33,12 +32,11 @@ const routes: Routes = [
   {path: 'proposito', component: PropositoComponent},
   {path: 'stakeholder', component: StakeholderComponent},
   {path: 'camiseta', component: CamisetaComponent},
-  {path: 'produtos', component: ProdutosComponent},
   {path: 'politica-privacidade', component: PoliticaPrivacidadeComponent},
   {path: 'cadastro-produto', component: CadastroProdutoComponent},
   {path: 'carrinho', component: CarrinhoComponent},
   {path: 'pagamento', component: PagamentoComponent},
-  {path: 'produto-individual', component: ProdutoIndividualComponent},
+  {path: 'produto-individual/:id', component: ProdutoIndividualComponent},
   {path: 'troca', component: TrocaComponent},
   {path: 'vit-menstrual', component: VitMenstrualComponent},
   {path: 'categoria', component: CategoriaComponent},

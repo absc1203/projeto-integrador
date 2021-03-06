@@ -5,14 +5,14 @@
 
 <div class="container px-5 bg-green pt-5">
     <div class="row align-items-start justify-content-center">
-        <div class="col-md-3 mr-5" *ngFor='let produto of listaProdutos'>
+        <div class="col-md-3 mr-5" *ngFor='let produto of listaCamisetas'>
             <div class="row border d-flex mb-3 justify-content-center bg-light">
                 <img class="img-fluid zoom" src="{{produto.imgProduto}}">
             </div>
-            <p class="h5 text-center">{{produto.descricaoProduto}}</p>
-            <p class="h3 text-center">{{produto.precoProduto}}</p>
+            <p class="h5 text-center">{{produto.nomeProduto}}</p>
+            <p class="h3 text-center">R$ {{produto.precoProduto}}</p>
             <div class="row justify-content-center">
-                <a routerLink="/index" class="btn btn-dark font-weight-bold pr-5 pl-5 mb-5 mt-2">COMPRAR</a>
+                <a [routerLink]="['/produto-individual', produto.id]" class="btn btn-dark font-weight-bold pr-5 pl-5 mb-5 mt-2">COMPRAR</a>
             </div>
         </div>
     </div>
