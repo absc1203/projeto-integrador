@@ -1,40 +1,62 @@
-<div class="container-fluid bg-color">
+<div class="container-fluid align-items-center">
     <div class="row d-flex justify-content-center">
         <div class="col-md-10">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
 
-                    <div class="row text-center p-4 justify-content-center">
+                    <div class="row text-center p-4">
                         <img class="image-camisa img-fluid" src="../../assets/imagens/camisaAzulclaro.png" />
                     </div>
 
                 </div>
+
                 <div class="col-md-6">
 
                     <div class="fundo-compra p-4">
 
                         <div class="row justify-content-center mt-4 mb-3 ">
 
-                            <h5 class="text-uppercase mt-3">
-                                Camiseta Feminina ODS 13
-
-                                <span class="tamanhos mt-3 justify-content-center">R$ 24,99</span>
-
-                                <span class="tamanhos mt-3 justify-content-center text-muted ">CODIGO:2021-02-021</span>
-
-                            </h5>
-
+                            <p class="text-uppercase mt-3 h3">
+                                {{produto.nomeProduto}}
+                            </p>
+                            <br>
                         </div>
+                            
+                            <p class="h5">
+                            <p class="tamanhos mt-3 justify-content-center">R$ {{produto.precoProduto}}
+                            </p>
+                            <p class="tamanhos mt-3 justify-content-center text-muted">CÓDIGO: 2021-02-021
+                            </p>
+
+                      
 
                         <div class=" mb-5 mt-3 ">
                             <h6 class="mt-3 d-flex justify-content-center">ESCOLHA UM TAMANHO:</h6>
                             <div class="mt-3 d-flex justify-content-center">
-                                <label class="radio"> <input type="radio" name="size" value="S" checked><span>P</span> </label>
+                                <label class="radio mr-2">
+                                    <input type="radio" name="size" value="S" checked>
+                                    <span>P</span>
+                                </label>
 
-                                <label class="radio"> <input type="radio" name="size" value="M"> <span>M</span> </label>
+                                <label class="radio mr-2">
+                                    <input type="radio" name="size" value="M">
+                                    <span>M</span>
+                                </label>
 
-                                <label class="radio"> <input type="radio" name="size" value="L"> <span>G</span> </label> <label class="radio"> <input type="radio" name="size" value="XL"> <span>GG</span> </label> <label class="radio"> <input type="radio" name="size" value="XXL"> <span>EGG</span> </label>
-                                <select name="QUANTIDADE">
+                                <label class="radio mr-2">
+                                    <input type="radio" name="size" value="L">
+                                    <span>G</span>
+                                </label>
+                                <label class="radio mr-2">
+                                    <input type="radio" name="size" value="XL">
+                                    <span>GG</span>
+                                </label>
+                                <label class="radio mr-2">
+                                    <input type="radio" name="size" value="XXL">
+                                    <span>EGG</span>
+                                </label>
+
+                                <select class="mb-2" name="QUANTIDADE">
                                     <option value="">1</option>
                                     <option value="">2</option>
                                     <option value="">3</option>
@@ -45,49 +67,41 @@
                                     <option value="">8</option>
                                     <option value="">9</option>
                                     <option value="">10</option>
-    
                                 </select>
                             </div>
+                        </div>
+                        <div>
+                            <div class="col-md-12">
+                                <div class="text-center">
+                                    <h4>DESCRIÇÃO DO PRODUTO</h4>
 
-
+                                    <p>MODELO Nº: 2021-02-021 - Azul Ciano VENDIDO POR: VIT | Saúde e Educação
+                                    </p>
+                                    <br>
+                                </div>
+                                <p>Modelagem manga curta, estampada com símbolo da ODS 17. Camiseta feminina
+                                    desenvolvida em malha de viscose com elasticidade. Possui modelagem ampla com
+                                    caimento solto. A parte frontal tem estampa da ODS enquanto a parte
+                                    posterior não tem estampa. As mangas são curtas e o decote é redondo. Invista nas
+                                    estampas divertidas! Composição: 96% Viscose e 4% Elastano.
+                                </p>
+                            </div>
                         </div>
                         <div class=" row d-flex justify-content-center align-content-center">
-
                             <button class="btn btn-outline-secondary text-uppercase ">Calcular frete</button>
-
                             <button class="btn btn-outline-secondary text-uppercase ml-4 px-4">COMPRAR</button>
-
-
                         </div>
-
-
-
-
-
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<div style="background: #8dcc91;" class="container-fluid ">
-    <div class="container-fluid bg-menu"></div>
-    <div class="container-fluid bg-menu row ">
-
-        <p class="mt-1"></p>
-    </div>
-</div>
-
 <h1 class="alinhamento">DESCRIÇÃO DO PRODUTO</h1>
-<p class=" h3 alinhamento"> MODELO Nº: 2021-02-021- Azul ciano VENDIDO POR: VIT | Saúde e Educação. <br> Modelagem Manga Curta, estampada com simbulo da ODS 17. Viscose Camiseta feminina desenvolvida em malha de viscose com elasticidade. Possui modelagem ampla com caimento solto.
-    A parte frontal tem estampa da ODS enquanto a parte posterior não tem estampa. As mangas são curtas e o decote é redondo. Invista nas estampas divertidas! Composição: 96% Viscose 4% Elastano.
+<p class=" h3 alinhamento"> MODELO Nº: 2021-02-021- Azul ciano VENDIDO POR: VIT | Saúde e Educação. <br> Modelagem Manga
+    Curta, estampada com simbulo da ODS 17. Viscose Camiseta feminina desenvolvida em malha de viscose com elasticidade.
+    Possui modelagem ampla com caimento solto.
+    A parte frontal tem estampa da ODS enquanto a parte posterior não tem estampa. As mangas são curtas e o decote é
+    redondo. Invista nas estampas divertidas! Composição: 96% Viscose 4% Elastano.
 </p>
-<div style=" background: #8dcc91; " class="container-fluid ">
-    <div class="container-fluid bg-menu "></div>
-    <div class="container-fluid bg-menu row ">
-
-        <p class="mt-2 "></p>
-    </div>
-</div>
+<app-footer></app-footer>

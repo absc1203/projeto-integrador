@@ -1,4 +1,8 @@
+import { Route } from '@angular/compiler/src/core';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Produto } from '../model/Produto';
+import { ProdutoService } from '../service/produto.service';
 
 @Component({
   selector: 'app-produto-individual',
@@ -6,10 +10,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./produto-individual.component.css']
 })
 export class ProdutoIndividualComponent implements OnInit {
+  
+  produto: Produto = new Produto()
+  idProduto: number
 
-  constructor() { }
 
-  ngOnInit(): void {
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private produtoService: ProdutoService
+  ) { }
+
+  ngOnInit() {
+    window.scroll(0,0)
+
+    this.idProduto = this.route.snapshot.params['id']
+    this.findByIdProduto(this.idProduto)
   }
+
+  findByIdProduto(id: number){
+    this.produtoService.getByIdProduto(id).subscribe((resp: Produto)=> {
+      this.produto = resp
+    })
+  }
+
 
 }

@@ -55,7 +55,10 @@ import { ProdutosDeleteComponent } from './delete/produtos-delete/produtos-delet
     CategoriaEditComponent,
     CategoriaDeleteComponent,
     ProdutosEditComponent,
-    ProdutosDeleteComponent
+    ProdutosDeleteComponent,
+    CadastroProdutoComponent
+
+
   ],
   imports: [
     BrowserModule,

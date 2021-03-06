@@ -14,13 +14,12 @@ body {
     border-radius: 20px;
     background: #97958f;
     box-shadow: 10px 10px 40px #00b7ff;
-    border: none
+    border: none;
+
 }
 
 .card img {
     border-radius: 40%;
-    background: linear-gradient(145deg, #fd0000, #ffffff);
-    box-shadow: 15px 15px 40px #02abc8, -15px -15px 40px #08ec13
 }
 
 .neo-button {
@@ -39,6 +38,8 @@ body {
 .descricao {
     font-style: italic;
     color: white;
+    font-size: 15px;
+  
     }
 
 
@@ -63,6 +64,21 @@ body {
 .fa-twitter {
     color: #55acee
 }
+.erick{
+    height: 560px;
+}
+.isabel{
+    height: 540px;
+}
+.botoesIsabel{
+    margin-top: 160px;
+}
+.botoes{
+    margin-top: 70px;
+}
+.botoesAndre{
+    margin-top: 95px;
+}
 
 
 /*
@@ -72,9 +88,9 @@ body {
 */
 
 .andre {
-    height: 1000px;
-    font-size: 17px;
-    height: fit-content;
+    
+    font-size: 16px;
+ 
 }
 
 .tamanhoImagem {
@@ -96,13 +112,12 @@ body {
 }
 
 .linha {
-    margin-top: 200px;
-    margin-bottom: -175px;
+    margin-top: 65px;
     color: rgb(65, 243, 11);
 }
 
 .devs {
-    margin-top: 250px;
+    margin-top: 50px;
     font-weight: bold;
     font-size: 40px;
 }
@@ -118,7 +133,6 @@ body {
 }
 
 .trabalhos {
-    margin-left: 150px;
     font-size: 30px;
     font-weight: bold;
 }
@@ -130,4 +144,16 @@ body {
 
 .developer-color {
     color: rgb(151, 224, 40);
+}
+
+.icones-andre{
+
+margin-top: 94px;
+
+}
+
+.icones-isabel{
+
+margin-top: 157px;
+
 }

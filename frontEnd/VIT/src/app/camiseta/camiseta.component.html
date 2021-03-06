@@ -9,10 +9,10 @@
             <div class="row border d-flex mb-3 justify-content-center bg-light">
                 <img class="img-fluid zoom" src="{{produto.imgProduto}}">
             </div>
-            <p class="h5 text-center">{{produto.descricaoProduto}}</p>
-            <p class="h3 text-center">{{produto.precoProduto}}</p>
+            <p class="h5 text-center">{{produto.nomeProduto}}</p>
+            <p class="h3 text-center">R$ {{produto.precoProduto}}</p>
             <div class="row justify-content-center">
-                <a routerLink="/index" class="btn btn-dark font-weight-bold pr-5 pl-5 mb-5 mt-2">COMPRAR</a>
+                <a [routerLink]="['/produto-individual', produto.id]" class="btn btn-dark font-weight-bold pr-5 pl-5 mb-5 mt-2">COMPRAR</a>
             </div>
         </div>
     </div>

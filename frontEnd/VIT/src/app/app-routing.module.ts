@@ -36,7 +36,7 @@ const routes: Routes = [
   {path: 'cadastro-produto', component: CadastroProdutoComponent},
   {path: 'carrinho', component: CarrinhoComponent},
   {path: 'pagamento', component: PagamentoComponent},
-  {path: 'produto-individual', component: ProdutoIndividualComponent},
+  {path: 'produto-individual/:id', component: ProdutoIndividualComponent},
   {path: 'troca', component: TrocaComponent},
   {path: 'vit-menstrual', component: VitMenstrualComponent},
   {path: 'categoria', component: CategoriaComponent},
