@@ -21,7 +21,7 @@ export class ProdutosDeleteComponent implements OnInit {
     private produtoService: ProdutoService
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
 
     window.scroll(0,0)
 

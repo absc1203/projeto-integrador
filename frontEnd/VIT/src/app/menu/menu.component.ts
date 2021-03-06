@@ -4,6 +4,8 @@ import { AuthService } from '../service/auth.service';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { UsuarioLogin } from '../model/UsuarioLogin';
+import { Categoria } from '../model/Categoria';
+import { CategoriaService } from '../service/categoria.service';
 
 
 @Component({
@@ -14,15 +16,27 @@ import { UsuarioLogin } from '../model/UsuarioLogin';
 export class MenuComponent implements OnInit {
 
   usuarioLogin: UsuarioLogin = new UsuarioLogin()
+  categoria: Categoria = new Categoria()
+  listaCategorias: Categoria[]
+  idCategoria: number
 
   constructor(
     public auth: AuthService,
-    private router: Router
+    private router: Router,
+    private categoriaService: CategoriaService
   ) {
   }
 
   ngOnInit() {
     window.scroll(0, 0)
+
+    this.getAllCategorias()
+  }
+
+  getAllCategorias(){
+    this.categoriaService.getAllCategorias().subscribe((resp: Categoria[]) =>{
+      this.listaCategorias = resp
+    })
   }
 
   logar() {
