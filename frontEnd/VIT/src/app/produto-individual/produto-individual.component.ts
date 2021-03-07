@@ -10,9 +10,12 @@ import { ProdutoService } from '../service/produto.service';
   styleUrls: ['./produto-individual.component.css']
 })
 export class ProdutoIndividualComponent implements OnInit {
-  
+
   produto: Produto = new Produto()
   idProduto: number
+  seta: String = '▷'
+  setaBaixo: String= "▽"
+  setaDireita: String = '▷'
 
 
   constructor(
@@ -32,6 +35,13 @@ export class ProdutoIndividualComponent implements OnInit {
     this.produtoService.getByIdProduto(id).subscribe((resp: Produto)=> {
       this.produto = resp
     })
+  }
+
+  setaTransicao(){
+    if(this.seta == this.setaDireita)
+      this.seta = this.setaBaixo
+    else if(this.seta == this.setaBaixo)
+      this.seta = this.setaDireita
   }
 
 

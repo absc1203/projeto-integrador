@@ -59,3 +59,11 @@ h1 {
     padding-bottom: 2rem;
     border-radius: 60px;
 }
+
+.sombra {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 8px 15px;
+    color: #b68275;
+  }
+  
