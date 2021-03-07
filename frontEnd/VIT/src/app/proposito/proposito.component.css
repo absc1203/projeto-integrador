@@ -108,7 +108,7 @@ body {
 }
 
 .textoProposito {
-    margin-top: 50px !important;
+    margin-top: 30px !important;
 }
 
 .linha {
@@ -123,7 +123,7 @@ body {
 }
 
 .devImage {
-    height: 500px;
+    height: 28rem;
 }
 
 .proposito {
@@ -148,12 +148,24 @@ body {
 
 .icones-andre{
 
-margin-top: 94px;
+margin-top: 114px;
 
 }
 
 .icones-isabel{
 
-margin-top: 157px;
+margin-top: 50px;
+
+}
+
+.icones-erick{
+
+margin-top: 65px;
+
+}
+
+.icones-barbara{
+
+margin-top: 43px;
 
 }
