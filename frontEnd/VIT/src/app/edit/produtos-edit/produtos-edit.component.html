@@ -1,0 +1,48 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Atualizar produto</h1>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+    <div class="form-group">
+        <label for="titulo">Nome: </label>
+        <input [(ngModel)]='produto.descricaoProduto' type="text" class="form-control" id="nome" placeholder="Insira o nome do produto">
+    </div>
+
+    <div class="form-group">
+        <label for="text">Descrição: </label>
+        <input [(ngModel)]='produto.descricaoProduto' type="text" class="form-control" id="descricao" placeholder="Insira a descrição do produto">
+    </div>
+
+    <div class="form-group">
+        <label for="text">Preço: </label>
+        <textarea [(ngModel)]='produto.precoProduto' type="number" class="form-control" id="preco" placeholder="Insira o preço do produto"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="text">Quantidade: </label>
+        <textarea [(ngModel)]='produto.qtProduto' type="number" class="form-control" id="quantidade" placeholder="Insira a quantidade do produto"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="text">Imagem: </label>
+        <textarea [(ngModel)]='produto.imgProduto' type="text" class="form-control" id="imagem" placeholder="Insira o link da imagem do produto"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="text">Escolha uma categoria ou <a data-dismiss="modal" routerLink='/categoria'>cadastre um novo</a>: </label>
+        <select name="categoria" id="categoria" class="form-control" [(ngModel)]='idCategoria' (change)='findByIdCategoria()'>
+            <option *ngFor='let categoria of listaCategorias' value="{{categoria.id}}">{{categoria.categoriaProduto}}</option>
+        </select>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <button class="btn btn-danger mr-4" routerLink='/index'>Cancelar</button>
+        <button class="btn btn-success" (click)='atualizarProduto()'>Atualizar</button>
+    </div>
+</div>
+</div>
+</div>

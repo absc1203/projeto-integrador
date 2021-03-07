@@ -12,12 +12,22 @@ import { StakeholderComponent } from './stakeholder/stakeholder.component';
 import { ContatoComponent } from './contato/contato.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
-import { CompraIndividualComponent } from './compra-individual/compra-individual.component';
 import { VitMenstrualComponent } from './vit-menstrual/vit-menstrual.component';
 import { CamisetaComponent } from './camiseta/camiseta.component';
 import { ProdutosDiversosComponent } from './produtos-diversos/produtos-diversos.component';
 import { IndexComponent } from './index/index.component';
+import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
+
 import { HttpClientModule } from '@angular/common/http';
+import { ProdutoIndividualComponent } from './produto-individual/produto-individual.component';
+import { PagamentoComponent } from './pagamento/pagamento.component';
+import { TrocaComponent } from './troca/troca.component';
+import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
+import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
+import { ProdutosEditComponent } from './edit/produtos-edit/produtos-edit.component';
+import { ProdutosDeleteComponent } from './delete/produtos-delete/produtos-delete.component';
 
 
 @NgModule({
@@ -30,11 +40,25 @@ import { HttpClientModule } from '@angular/common/http';
     ContatoComponent,
     CadastroComponent,
     CarrinhoComponent,
-    CompraIndividualComponent,
     VitMenstrualComponent,
     CamisetaComponent,
     ProdutosDiversosComponent,
-    IndexComponent
+    IndexComponent,
+    ProdutoIndividualComponent,
+    TrocaComponent,
+    PoliticaPrivacidadeComponent,
+    PagamentoComponent,
+
+    CadastroProdutoComponent,
+    VitMenstrualComponent,
+    CategoriaComponent,
+    CategoriaEditComponent,
+    CategoriaDeleteComponent,
+    ProdutosEditComponent,
+    ProdutosDeleteComponent,
+    CadastroProdutoComponent
+
+
   ],
   imports: [
     BrowserModule,
