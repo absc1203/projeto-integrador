@@ -1,62 +1,80 @@
-.carousel-inner{
+.carousel-inner {
     width: auto;
 }
 
-.linha{
+.linha {
     background-color: #9ccb90;
     height: 2px;
     width: 60rem;
     min-width: 5rem;
 }
 
-.linha-roupa{
+.linha-roupa {
     background-color: #9ccb90;
     height: 2px;
 }
+
 .text-color {
     color: rgb(0, 0, 0)
 }
 .background-color{
    color: green;
+   background-color: #1D5C2C;
 }
-.border{}
 
+.cursor{
+    cursor: pointer;
+}
 
 .img1Carosel{
-    height: 600px;
+    height: 435px;
 }
-.mtCarousel{
-    margin-top: -100px;
+
+.aprovadoCarosel{
+color: rgb(0, 151, 221);
+font-size: 30px;
+text-decoration-line: underline;
+
 }
-.txtCarousel{
+
+.txtCarousel {
     font-size: 17px;
     margin-top: 25px;
     font-family: cursive;
-}
-.carousel-left { 
-    width: 75%; float: left; 
+    
 }
 
-.some-text { 
-    float: left; width: 25%;
+.carousel-left {
+    width: 75%;
+    float: left;
 }
 
-.dist{
+.some-text {
+    float: left;
+    width: 25%;
+}
+
+.dist {
     margin-top: 10rem;
 }
+/*  Jumbtron */
 
+.bg-jumbotron{
+    background-color:black;
+    
+}
 
 /* Cards */
 
 .card {
     border: none;
     border-radius: 0px;
-    background-color: #fff
+    background-color: #fff;
 }
 
 .text1 {
     font-size: 18px;
-    color:#000
+    color: #000;
 }
 
 .info {
@@ -66,29 +84,40 @@
 .cost span {
     color: #fb3531;
     font-weight: bold;
-    font-size: 20px
+    font-size: 20px;
 }
 
 .watchcost span {
     color: #286783;
     font-weight: bold;
-    font-size: 20px
+    font-size: 20px;
+}
+.confortável{
+    opacity: 65%;
 }
 
 .watch {
-    background: #286783
+    background: #286783;
 }
 
 .tshirtcost span {
     color: #0012b2;
     font-weight: bold;
-    font-size: 20px
+    font-size: 20px;
 }
 
 .tshirt {
-    background-color: #0012b2
+    background-color: #0012b2;
 }
 
 .cursor {
     cursor: pointer
+}
+.bg-comprar:hover{
+    background-color: rgb(46, 41, 44);
+ 
+}
+.bg-comprar{
+    background-color: #000;
+    
 }

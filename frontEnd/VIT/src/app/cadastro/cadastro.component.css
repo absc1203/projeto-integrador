@@ -1,3 +1,21 @@
-.tamanhoinput{
-    width: 15rem !important;
-}
+    .tamanhoinput {
+        width: 15rem !important;
+    }
+    
+    .form-control-placeholder {
+        position: absolute;
+        top: 0;
+        padding: 7px 0 0 13px;
+        transition: all 200ms;
+        opacity: 0.5;
+        color: grey;
+    }
+    
+    .bg-color-cadastro {
+        color: white;
+        background-image: radial-gradient(circle 919px at 1.7% 6.1%, rgb(12, 12, 12) 0%, rgba(14, 14, 14, 0.85) 100.2%)
+    }
+    
+    .bg-color {
+        background-image: radial-gradient(circle 919px at 1.7% 6.1%, #8dcc91 0%, #8dcc91 100.2%)
+    }
