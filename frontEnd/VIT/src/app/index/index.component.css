@@ -18,20 +18,28 @@
 }
 .background-color{
    color: green;
+   background-color: #1D5C2C;
 }
-.border{}
 
+.cursor{
+    cursor: pointer;
+}
 
 .img1Carosel{
-    height: 600px;
+    height: 435px;
 }
-.mtCarousel{
-    margin-top: -100px;
+
+.aprovadoCarosel{
+color: rgb(0, 151, 221);
+font-size: 30px;
+text-decoration-line: underline;
+
 }
 .txtCarousel{
     font-size: 17px;
     margin-top: 25px;
     font-family: cursive;
+    
 }
 .carousel-left { 
     width: 75%; float: left; 
@@ -44,7 +52,12 @@
 .dist{
     margin-top: 10rem;
 }
+/*  Jumbtron */
 
+.bg-jumbotron{
+    background-color:black;
+    
+}
 
 /* Cards */
 
@@ -74,6 +87,9 @@
     font-weight: bold;
     font-size: 20px
 }
+.confortável{
+    opacity: 65%;
+}
 
 .watch {
     background: #286783
@@ -91,4 +107,12 @@
 
 .cursor {
     cursor: pointer
+}
+.bg-comprar:hover{
+    background-color: rgb(46, 41, 44);
+ 
+}
+.bg-comprar{
+    background-color: #000;
+    
 }
