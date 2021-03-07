@@ -1,17 +1,25 @@
+<<<<<<< HEAD
 .bg-color {
     background-color: #fafdf4;
 }
 
+=======
+>>>>>>> testes
 .cor-letras {
     color: #50e3e3;
 }
 
+<<<<<<< HEAD
 .image-camisa {
     background-color: white;
 }
 
 .fundo-compra {
     background-color: #fafdf4;
+=======
+.fs-6{
+    font-size: 1rem !important;
+>>>>>>> testes
 }
 
 .tamanhos {
@@ -35,3 +43,65 @@
 
 
 
+<<<<<<< HEAD
+=======
+h1 {
+    color: rgb(138, 132, 132);
+}
+
+/* BOTAO DE QUANTIDADE */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.quantity-control {
+  display: flex;
+  width: fit-content;
+  background: #eaeaea;
+  border-radius: 5px;
+  padding: 0.6rem ;
+}
+
+.quantity-controla {
+  display: flex;
+  width: fit-content;
+  background: #eaeaea;
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.quantity-controla:hover{
+background-color: rgb(179, 179, 179);
+color: white;
+}
+
+.quantity-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+.quantity-btn svg {
+  width: 15px;
+}
+.quantity-input {
+  outline: none;
+  user-select: none;
+  text-align: center;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+}
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* FIM BOTAO DE QUANTIDADE */
+>>>>>>> testes
