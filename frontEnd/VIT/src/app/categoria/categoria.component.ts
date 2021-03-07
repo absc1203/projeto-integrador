@@ -26,6 +26,8 @@ export class CategoriaComponent implements OnInit {
       this.router.navigate(['/index'])
     }
 
+    console.log(environment.token)
+
     this.findAllCategorias()
   }
 
@@ -38,7 +40,7 @@ export class CategoriaComponent implements OnInit {
   cadastroCategoria(){
     this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria) =>{
       this.categoria = resp
-      alert('Tema cadastrado com sucesso!')
+      alert('Categoria cadastrada com sucesso!')
       this.findAllCategorias()
       this.categoria = new Categoria()
     })

@@ -30,7 +30,7 @@ public class Categoria {
 	
 	//----------------------------------------------------
 	@NotNull
-	@Size(min =10,max=255)
+	@Size(min =5,max=255)
 	private String categoriaProduto;
 	
 	//GET AND SET
