@@ -28,7 +28,7 @@ h1 {
 
 .video {
     width: 92%;
-    height: 450px;
+    height: 500px;
 }
 
 .texto-video {
@@ -39,7 +39,7 @@ h1 {
 }
 
 .cor-bg {
-    background-color: #FEF5F7;
+    background-color: #fdf4f2;
 }
 
 .texto-img {
