@@ -44,6 +44,9 @@ export class ProdutoIndividualComponent implements OnInit {
       this.seta = this.setaDireita
   }
 
+  comprarSubmit(){
+    alert('Compra realizada com sucesso!')
+  }
 
 }
 

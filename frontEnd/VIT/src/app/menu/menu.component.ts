@@ -29,15 +29,9 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     window.scroll(0, 0)
-
-    this.getAllCategorias()
   }
 
-  getAllCategorias(){
-    this.categoriaService.getAllCategorias().subscribe((resp: Categoria[]) =>{
-      this.listaCategorias = resp
-    })
-  }
+  
 
   logar() {
     this.auth.logar(this.usuarioLogin).subscribe((resp: UsuarioLogin) => {

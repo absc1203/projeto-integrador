@@ -19,7 +19,7 @@
 }
 .background-color{
    color: green;
-   background-color: #1D5C2C;
+   background-color: #D79E9F;
 }
 
 .cursor{
@@ -41,6 +41,7 @@ text-decoration-line: underline;
     font-size: 17px;
     margin-top: 25px;
     font-family: cursive;
+    color: black;
     
 }
 
@@ -92,9 +93,7 @@ text-decoration-line: underline;
     font-weight: bold;
     font-size: 20px;
 }
-.confortável{
-    opacity: 65%;
-}
+
 
 .watch {
     background: #286783;
