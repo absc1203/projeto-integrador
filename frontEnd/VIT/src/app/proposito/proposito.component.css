@@ -13,10 +13,12 @@ body {
 .card {
     border-radius: 20px;
     background: #97958f;
-    box-shadow: 10px 10px 40px #00b7ff;
+    box-shadow: 10px 10px 40px ;
     border: none;
 
 }
+
+
 
 .card img {
     border-radius: 40%;
@@ -108,7 +110,8 @@ body {
 }
 
 .textoProposito {
-    margin-top: 30px !important;
+    margin-top: 10px !important;
+    letter-spacing: 1px;
 }
 
 .linha {
