@@ -1,0 +1,69 @@
+.bg-color {
+    background-color: #fafdf4;
+}
+
+.cor-letras {
+    color: #50e3e3;
+}
+
+.image-camisa {
+    background-color: white;
+}
+
+.fundo-compra {
+    background-color: #fafdf4;
+}
+
+.tamanhos {
+    color: rgb(27, 24, 24);
+    font-weight: 700;
+    align-content: center;
+    display: flex;
+}
+
+.alinhamento {
+    text-align: center;
+}
+
+.btnBlack{
+    background-color: black;
+    color:white;
+    font-size: 1rem !important;
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+}
+
+h1 {
+    color: rgb(138, 132, 132);
+}
+
+
+
+
+
+.camiseta{
+
+margin-right: 300px;
+
+}
+
+.descricao{
+
+margin-left: 100px;
+
+}
+
+
+  .linha-roupa{
+    background-color: #9ccb90;
+    height: 2px;
+}
+
+.zoom {
+    transition: transform .2s; 
+    margin: 0 auto;
+  }
+  
+.zoom:hover {
+    transform: scale(1.1); 
+  }

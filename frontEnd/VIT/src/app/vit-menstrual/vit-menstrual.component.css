@@ -21,14 +21,14 @@ h1 {
 
 .texto-Prod {
     padding-left: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center;
     padding-bottom: 2rem;
 }
 
 .video {
     width: 92%;
-    height: 450px;
+    height: 500px;
 }
 
 .texto-video {
@@ -39,11 +39,11 @@ h1 {
 }
 
 .cor-bg {
-    background-color: #FEF5F7;
+    background-color: #fdf4f2;
 }
 
 .texto-img {
-    color: red;
+    color: black;
     padding-top: 2rem;
     justify-content: center;
     font-size: 2rem;
@@ -59,3 +59,11 @@ h1 {
     padding-bottom: 2rem;
     border-radius: 60px;
 }
+
+.sombra {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 8px 15px;
+    color: #b68275;
+  }
+  

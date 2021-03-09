@@ -1,0 +1,79 @@
+
+
+<div class="container col-md-8 mb-4 pt-3 w-cadastro pr-0 pl-0 mt-4">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-5">
+            <h4 class="text-center">CADASTRO DE PRODUTO</h4>
+
+            <div class="form-group">
+                <input [(ngModel)]='produto.nomeProduto' type="text" class="form-control" id='nome'
+                    placeholder="Nome do produto">
+                <input [(ngModel)]='produto.descricaoProduto' type="text" class="form-control mt-3" id='descricao'
+                    placeholder="Descrição do produto">
+                <input [(ngModel)]='produto.precoProduto' type="number" class="form-control mt-3" id='preco'
+                    placeholder="Preço do produto">
+                <input [(ngModel)]='produto.qtProduto' type="number" class="form-control mt-3" id='quantidade'
+                    placeholder="Quantidade do produto">
+                <input [(ngModel)]='produto.imgProduto' type="text" class="form-control mt-3" id='imagem'
+                    placeholder="Imagem do produto">
+
+                <label for="text mt-3 h4">Escolha uma categoria ou <a data-dismiss="modal" routerLink='/categoria'>cadastre
+                        uma nova</a>: </label> 
+                <select name="categoria MT-3" id="categoria" class="form-control" [(ngModel)]='idCategoria'
+                    (change)='findByIdCategoria()' placeholder='Categoria do produto'>
+                    <option *ngFor='let categoria of listaCategorias' value="{{categoria.id}}">
+                        {{categoria.categoriaProduto}}</option>
+                </select>
+
+            </div>
+
+            <div class="btn btn-dark" data-dismiss="modal" (click)="cadastrar()">CADASTRAR</div>
+        </div>
+
+        <div class="container justify-content-center">
+            <div class="row mt-5 jutify-items-center">
+                <div class="col-md-12 justify-content-center">
+                    <h2 class="text-center">Todas as categorias</h2>
+                </div>
+            </div>
+
+            <div class="row mt-3 mb-8 justify-content-start">
+                <div class="col-md-6 justify-content-start">
+
+                    <table class="table table-hover text-start">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col" class="text-left">Descrição</th>
+                                <th scope="col" class="text-left">Preço</th>
+                                <th scope="col" class="text-left">Quantidade</th>
+                                <th scope="col" class="text-left">Imagem</th>
+                                <th scope="col" class="text-left">Categoria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor='let produto of listaProdutos'>
+                                <th>{{produto.id}}</th>
+                                <td>{{produto.nomeProduto}}</td>
+                                <td>{{produto.descricaoProduto}}</td>
+                                <td>{{produto.precoProduto}}</td>
+                                <td>{{produto.qtProduto}}</td>
+                                <td>{{produto.imgProduto}}</td>
+                                <td>{{produto.categoria.categoriaProduto}}</td>
+
+                                <td class="d-flex justify-content-end">
+                                    <button class="btn btn-info mr-3"
+                                        [routerLink]="['/produtos-edit', produto.id]">Editar</button>
+                                    <button class="btn btn-danger"
+                                        [routerLink]="['/produtos-delete', produto.id]">Deletar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

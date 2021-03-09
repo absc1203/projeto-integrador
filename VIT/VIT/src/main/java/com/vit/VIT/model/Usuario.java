@@ -18,12 +18,12 @@ public class Usuario {
 
 	//----------------------------------------------------
 	@NotNull
-	@Size(min =10,max=100)
+	@Size(min =3,max=100)
 	private String usuario;
 	
 	//----------------------------------------------------
 	@NotNull
-	@Size(min =8,max=255)
+	@Size(min =6,max=255)
 	private String senha;
 	
 	//----------------------------------------------------

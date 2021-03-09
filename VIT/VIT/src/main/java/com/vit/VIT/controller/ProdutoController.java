@@ -20,7 +20,7 @@ import com.vit.VIT.repository.ProdutoRepository;
 
 @RequestMapping("/produtos")
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 
 public class ProdutoController {
 	

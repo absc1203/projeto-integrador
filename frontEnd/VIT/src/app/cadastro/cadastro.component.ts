@@ -28,12 +28,12 @@ export class CadastroComponent implements OnInit {
   }
 
   cadastrar(){
-    if(this.usuario.senha != this.confirmarSenha){
-      alert ('As senhas estão incorretas!')
-    }else{
+    //if(this.usuario.senha != this.confirmarSenha){
+     // alert ('As senhas estão incorretas!')
+    //}else{
       this.authService.cadastrar(this.usuario).subscribe((resp:Usuario)=> {this.usuario=resp})
       this.router.navigate(['/index'])
       alert('Usuário cadastrado')
     }
   }
-}
+//}
