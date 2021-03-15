@@ -45,6 +45,11 @@ body {
     }
 
 
+.texto-justificado{
+    letter-spacing: 0;
+}    
+
+
 
 .fa-facebook {
     color: #3b5998
@@ -61,6 +66,22 @@ body {
 
 .fa-youtube {
     color: #cd201f
+}
+
+.cor-vit{
+  color: #1C622C;
+}
+
+.cor-saude-edu{
+    color: #8A3244;
+}
+
+.btn-danger{
+    background-color: #c20027 !important;
+}
+
+.btn-danger:focus{
+    background-color: #dd5c5c !important;
 }
 
 .fa-twitter {
