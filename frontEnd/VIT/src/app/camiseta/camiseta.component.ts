@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
+import { AlertsService } from '../service/alerts.service';
 import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
 
@@ -24,7 +25,8 @@ export class CamisetaComponent implements OnInit {
   constructor(
     private router: Router,
     private ProdutoService: ProdutoService,
-    private categoriaService: CategoriaService
+    private categoriaService: CategoriaService,
+    private alert: AlertsService
   ) { }
 
   ngOnInit() {
@@ -49,7 +51,7 @@ export class CamisetaComponent implements OnInit {
     this.ProdutoService.postProduto(this.produto).subscribe((resp: Produto) => {
       this.produto = resp
     
-      alert('Produto cadastrado com sucesso!')
+      this.alert.showAlertSuccess('Produto cadastrado com sucesso!')
       this.findAllProdutos()
 
       this.produto = new Produto()

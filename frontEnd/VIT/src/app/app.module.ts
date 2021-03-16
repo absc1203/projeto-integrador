@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -27,6 +29,10 @@ import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.com
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 import { ProdutosEditComponent } from './edit/produtos-edit/produtos-edit.component';
 import { ProdutosDeleteComponent } from './delete/produtos-delete/produtos-delete.component';
+import { AlertComponent } from './alert/alert.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
+
 
 
 @NgModule({
@@ -54,7 +60,8 @@ import { ProdutosDeleteComponent } from './delete/produtos-delete/produtos-delet
     CategoriaDeleteComponent,
     ProdutosEditComponent,
     ProdutosDeleteComponent,
-    CadastroProdutoComponent
+    CadastroProdutoComponent,
+    AlertComponent
 
 
   ],
@@ -62,7 +69,8 @@ import { ProdutosDeleteComponent } from './delete/produtos-delete/produtos-delet
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ModalModule.forRoot()
 
   ],
   providers: [{

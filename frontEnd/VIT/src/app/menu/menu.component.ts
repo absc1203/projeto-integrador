@@ -6,6 +6,7 @@ import { environment } from 'src/environments/environment.prod';
 import { UsuarioLogin } from '../model/UsuarioLogin';
 import { Categoria } from '../model/Categoria';
 import { CategoriaService } from '../service/categoria.service';
+import { AlertsService } from '../service/alerts.service';
 
 
 @Component({
@@ -23,7 +24,8 @@ export class MenuComponent implements OnInit {
   constructor(
     public auth: AuthService,
     private router: Router,
-    private categoriaService: CategoriaService
+    private categoriaService: CategoriaService,
+    private alert: AlertsService
   ) {
   }
 
@@ -36,7 +38,7 @@ export class MenuComponent implements OnInit {
   logar() {
     this.auth.logar(this.usuarioLogin).subscribe((resp: UsuarioLogin) => {
       this.usuarioLogin = resp
-      alert('Você está logado!')
+      this.alert.showAlertSuccess('Você está logado!')
 
       environment.id = this.usuarioLogin.id
       environment.token = this.usuarioLogin.token
@@ -45,7 +47,7 @@ export class MenuComponent implements OnInit {
     },
       erro => {
         if (erro.status == 500) {
-          alert('Usuário e/ou senha incorretos!')
+          this.alert.showAlertDanger('Usuário e/ou senha incorretos!')
         }
       })
   }

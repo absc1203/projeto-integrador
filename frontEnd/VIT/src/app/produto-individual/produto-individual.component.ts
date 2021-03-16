@@ -2,6 +2,7 @@ import { Route } from '@angular/compiler/src/core';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Produto } from '../model/Produto';
+import { AlertsService } from '../service/alerts.service';
 import { ProdutoService } from '../service/produto.service';
 
 @Component({
@@ -21,7 +22,8 @@ export class ProdutoIndividualComponent implements OnInit {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private produtoService: ProdutoService
+    private produtoService: ProdutoService,
+    private alert: AlertsService
   ) { }
 
   ngOnInit() {
@@ -45,7 +47,7 @@ export class ProdutoIndividualComponent implements OnInit {
   }
 
   comprarSubmit(){
-    alert('Compra realizada com sucesso!')
+    this.alert.showAlertSuccess('Compra realizada com sucesso!')
   }
 
 }
