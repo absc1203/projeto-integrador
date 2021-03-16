@@ -24,8 +24,5 @@ export class AlertsService {
   showAlertSuccess(message: string){
     this.showAlert(message, 'success')
   }
-
-  showAlertInfo(message: string){
-    this.showAlert(message, 'info')
-  }
+ 
 }

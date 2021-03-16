@@ -19,7 +19,7 @@
 }
 .background-color{
    color: green;
-   background-color: #D79E9F;
+   background-color: #f6ebd4;
 }
 
 .cursor{
@@ -27,7 +27,7 @@
 }
 
 .img1Carosel{
-    height: 435px;
+    height: 400px;
 }
 
 .aprovadoCarosel{
@@ -40,7 +40,6 @@ text-decoration-line: underline;
 .txtCarousel {
     font-size: 17px;
     margin-top: 25px;
-    font-family: cursive;
     color: black;
     
 }
@@ -120,3 +119,10 @@ text-decoration-line: underline;
     background-color: #000;
     
 }
+
+.sombraBanner {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 8px 15px;
+    color: #d6ae56;
+  }
