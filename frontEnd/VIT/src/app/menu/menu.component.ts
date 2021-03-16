@@ -36,6 +36,7 @@ export class MenuComponent implements OnInit {
   logar() {
     this.auth.logar(this.usuarioLogin).subscribe((resp: UsuarioLogin) => {
       this.usuarioLogin = resp
+      alert('Você está logado!')
 
       environment.id = this.usuarioLogin.id
       environment.token = this.usuarioLogin.token

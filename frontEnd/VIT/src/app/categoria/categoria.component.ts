@@ -25,7 +25,6 @@ export class CategoriaComponent implements OnInit {
     if(environment.token == ''){
       this.router.navigate(['/index'])
     }
-
     this.findAllCategorias()
   }
 
