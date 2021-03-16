@@ -47,7 +47,6 @@ import { ProdutosDeleteComponent } from './delete/produtos-delete/produtos-delet
     TrocaComponent,
     PoliticaPrivacidadeComponent,
     PagamentoComponent,
-
     CadastroProdutoComponent,
     VitMenstrualComponent,
     CategoriaComponent,
