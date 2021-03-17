@@ -1,24 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 * {
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif
-}
-
-body {
-    display: grid;
-    background: #eee
 }
 
 .card {
     border-radius: 20px;
     background: #97958f;
-    box-shadow: 10px 10px 40px ;
+    box-shadow: 10px 10px 40px;
     border: none;
-
 }
-
-
 
 .card img {
     border-radius: 40%;
@@ -41,10 +32,7 @@ body {
     font-style: italic;
     color: white;
     font-size: 15px;
-  
-    }
-
-
+}
 
 .fa-facebook {
     color: #3b5998
@@ -66,19 +54,24 @@ body {
 .fa-twitter {
     color: #55acee
 }
-.erick{
+
+.erick {
     height: 560px;
 }
-.isabel{
+
+.isabel {
     height: 540px;
 }
-.botoesIsabel{
+
+.botoesIsabel {
     margin-top: 160px;
 }
-.botoes{
+
+.botoes {
     margin-top: 70px;
 }
-.botoesAndre{
+
+.botoesAndre {
     margin-top: 95px;
 }
 
@@ -90,9 +83,7 @@ body {
 */
 
 .andre {
-    
     font-size: 16px;
- 
 }
 
 .tamanhoImagem {
@@ -115,8 +106,10 @@ body {
 }
 
 .linha {
-    margin-top: 65px;
-    color: rgb(65, 243, 11);
+    background-color: #9ccb90;
+    height: 2px;
+    width: 60%;
+    min-width: 5rem;
 }
 
 .devs {
@@ -149,22 +142,30 @@ body {
     color: rgb(151, 224, 40);
 }
 
-.icones-andre{
-margin-top: 114px;
+.icones-andre {
+    margin-top: 114px;
 }
 
-.icones-isabel{
-margin-top: 50px;
+.icones-isabel {
+    margin-top: 50px;
 }
 
-.icones-erick{
-margin-top: 65px;
+.icones-erick {
+    margin-top: 65px;
 }
 
-.icones-barbara{
-margin-top: 43px;
+.icones-barbara {
+    margin-top: 43px;
 }
 
-.icones-tiago{
-    margin-top:70px !important;
+.icones-tiago {
+    margin-top: 70px !important;
+}
+
+.btn-missao {
+    background-color: #201e1f !important;
+}
+
+.btn-missao:focus {
+    background-color: #686363 !important;
 }

@@ -65,5 +65,9 @@ h1 {
     padding: 10px;
     box-shadow: 8px 15px;
     color: #b68275;
-  }
-  
+}
+
+.tamanhoImagemVIT {
+    width: 25rem !important;
+    max-width: none;
+}
