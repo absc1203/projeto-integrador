@@ -104,12 +104,10 @@
      
      .modal-content {
          color: white;
-         background-image: radial-gradient(circle 919px at 1.7% 6.1%, rgb(12, 12, 12) 0%, rgba(14, 14, 14, 0.85) 100.2%)
+         
      }
      
-     .modal {
-         background-image: radial-gradient(circle 919px at 1.7% 6.1%, #8dcc91 0%, #8dcc91 100.2%)
-     }
+     
      
      .tc {
          font-size: 12px
@@ -120,8 +118,6 @@
      }
      
      .signup {
-         background: #17592a;
-         background: linear-gradient(90deg, #17592a 0%, #b31f24 100%);
          border-radius: 34rem;
          border: none;
          color: white;
@@ -131,7 +127,6 @@
      }
      
      .close:hover {
-         color: #17592a;
          position: relative;
          top: 20px;
      }

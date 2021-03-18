@@ -1,36 +1,38 @@
 <div class="container">
 
-    <div class="row d-flex justify-content-center bgCadastro text-dark ">
+    <div class="row d-flex justify-content-center text-dark ">
 
-        <div class="col-md-5 mt-5 mb-5">
+        <div class="col-md-5 mt-5 mb-5 border sombra bgCadastro">
 
             <div class="row d-flex justify-content-center mb-4">
                 <div class="col-md-12">
 
-                    <h1 class="text-center">Cadastro</h1>
-                    <p class="text-center text">Por favor, preencha os campos abaixo para criar sua conta</p>
+                    <h1 class="text-center text-dark">Cadastro</h1>
+                    <p class="text-center text text-dark">Por favor, preencha os campos abaixo para criar sua conta</p>
 
-                    <div class="form-group ">
-                        <label for="nome">Nome</label>
+                    <div class="form-group ml-3">
+                        <label for="nome" class="text-dark">Nome</label>
                         <input [(ngModel)]='usuario.nome' class="form-control" type="text" name="nome" id="nome" placeholder="Seu nome">
+                        <small class="pl-2 text-danger">Mínimo de 3 caracteres</small>
                     </div>
 
                     <div class="form-group col md-6">
-                        <label for="email">Usuário</label>
+                        <label for="email" class="text-dark">Usuário</label>
                         <input [(ngModel)]='usuario.usuario' class="form-control" type="text" name="usuario" id="usuario" placeholder="Seu usuário">
+                        <small class="pl-2 text-danger">Mínimo de 3 caracteres</small>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="form-group col-md-12">
-                        <label for="senha">Senha</label>
+                        <label for="senha" class="text-dark">Senha</label>
                         <input (input)='confirmeSenha($event)' class="form-control" type="password" name="senha" id="senha" placeholder="Sua senha (6 dígitos)">
 
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md-12 ml-3">
-                        <label for="confirmSenha">Confirme senha</label>
+                        <label for="confirmSenha" class="text-dark">Confirme senha</label>
                         <input [(ngModel)]='usuario.senha' class="form-control" type="password" name="confirmSenha" id="confirmSenha" placeholder="Confirme sua senha">
 
                     </div>

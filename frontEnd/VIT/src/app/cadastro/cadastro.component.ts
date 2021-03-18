@@ -14,6 +14,7 @@ export class CadastroComponent implements OnInit {
   usuario: Usuario = new Usuario
   confirmarSenha: string
 
+
   constructor(
     private authService: AuthService,
     private router: Router,
@@ -28,14 +29,21 @@ export class CadastroComponent implements OnInit {
     this.confirmarSenha = event.target.value
   }
 
+
   cadastrar() {
     if (this.usuario.senha != this.confirmarSenha) {
       this.alert.showAlertDanger('As senhas estão incorretas!')
-    } else {
+    } 
+    else {
       this.authService.cadastrar(this.usuario).subscribe((resp: Usuario) => { this.usuario = resp })
       this.router.navigate(['/index'])
       this.alert.showAlertSuccess('Usuário cadastrado')
     }
   }
 
+  validaCampos(){
+    if(this.usuario.nome && this.usuario.usuario && this.usuario.senha == ''){
+      this.alert.showAlertDanger('Por favor, preencha todos os campos!')
+    }
+  }
 }

@@ -12,6 +12,14 @@
     }
     
     .bgCadastro{
-        color: white;
+        color: rgb(137, 218, 140) !important;
     }
+
+    .sombra {
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 8px 15px;
+        color: rgb(75, 74, 74);
+    }
+    
     

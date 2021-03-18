@@ -1,12 +1,12 @@
-<!--Inicio primeira linha menu-->
-<div class="container-fluid bg-menu">
-    <div class="container-fluid bg-menu "></div>
-    <div class="container-fluid bg-menu row ">
+<!--Inicio Primeira linha menu-->
+<div class="conteiner-fluid" data-dismiss='modal'>
+    <div class="container-fluid"></div>
+    <div class="conteiner-fluid bg-menu row">
 
         <p class="mt-2"></p>
     </div>
 </div>
-<!--Fim primeira linha menu-->
+<!--Fim Primeira linha menu-->
 
 <!--Inicio conteudo Entre as linhas (menu)-->
 <div class="container-fluid d-flex justify-content-center">
@@ -26,9 +26,7 @@
                     </li>
 
                     <li class="nav-item mt-2 ml-5 text-center">
-                        <a id="conteudoNavbarSuportado"
-                            class="h6 collapse navbar-collapse nav-link text-dark font-weight-bold"
-                           routerLink='/proposito'>PROPÓSITO</a>
+                        <a id="conteudoNavbarSuportado" class="h6 collapse navbar-collapse nav-link text-dark font-weight-bold" routerLink='/proposito'>PROPÓSITO</a>
                     </li>
                 </ul>
 
@@ -36,8 +34,7 @@
 
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown ml-5 mr-5">
-                            <a class="nav-link dropdown-toggle text-dark  font-weight-bold" href="#" id="navbarDropdown"
-                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-dark  font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 PRODUTOS
                             </a>
 
@@ -46,10 +43,8 @@
                                 <a class="dropdown-item" routerLink='/camiseta'>Camisetas</a>
                                 <a class="dropdown-item" routerLink='/produtos-diversos'>Produtos Diversos</a>
                                 <div class="dropdown-divider"></div>
-                                <a *ngIf='auth.logado()' class="dropdown-item font-weight-bold"
-                                    routerLink='/cadastro-produto'>Cadastrar produto</a>
-                                <a *ngIf='auth.logado()' class="dropdown-item font-weight-bold"
-                                    routerLink='/categoria'>Cadastrar categoria</a>
+                                <a *ngIf='auth.logado()' class="dropdown-item font-weight-bold" routerLink='/cadastro-produto'>Cadastrar produto</a>
+                                <a *ngIf='auth.logado()' class="dropdown-item font-weight-bold" routerLink='/categoria'>Cadastrar categoria</a>
 
                             </div>
                         </li>
@@ -60,9 +55,7 @@
                 <a>
                     <img class="logo" src="../../assets/imagens/logoVIT.png" alt="">
 
-                    <button class="navbar-toggler justify-content-center" type="button" data-toggle="collapse"
-                        data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
-                        aria-expanded="false" aria-label="Alterna navegação">
+                    <button class="navbar-toggler justify-content-center" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </a>
@@ -81,16 +74,13 @@
 
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <img type="button" class="btn btn-primary" data-toggle="modal"
-                                    data-target="#exampleModal" class="img-user" src="../../assets/imagens/user.webp"
-                                    alt="">
+                                <img type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" class="img-user" src="../../assets/imagens/user.webp" alt="">
                             </a>
                         </li>
 
                         <li class="nav-item data-dismiss='modal'">
                             <a class="nav-link " routerLink='/carrinho' data-dismiss='modal'>
-                                <img class="img-compras" data-dismiss='modal' src="../../assets/imagens/carrinho.png"
-                                    alt="">
+                                <img class="img-compras" data-dismiss='modal' src="../../assets/imagens/carrinho.png" alt="">
                             </a>
                         </li>
 
@@ -119,35 +109,31 @@
 
 <!--Inicio modal acoplado ao logo de usuário-->
 <div class="container-fluid d-flex justify-content-center">
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content p-4">
-                <div class="row modal-header border-0 mb-2">
-                    <div class=" col-md-8 modal-title align-content-center">
-                        <img class="img-fluid" src="../../assets/imagens/logoVIT.png" alt="">
-                    </div>
+                <div class="row d-flex justify-content-center modal-header border-0 mb-2">
+                    
+                        <img class="img-fluid text-center" src="../../assets/imagens/logoVIT.png" alt="">
+                    
                 </div>
 
                 <div class="modal-body">
-                    <h3 class="mb-4 text-light">Entrar</h3>
+                    <h3 class="mb-4 text-dark text-center">Entrar</h3>
                     <div class="form-group">
-                        <input [(ngModel)]='usuarioLogin.usuario' type="text" name="usuario" id="usuario"
-                            class="form-control p-0" required style="box-shadow: none;border-radius:0px">
+                        <input [(ngModel)]='usuarioLogin.usuario' type="text" name="usuario" id="usuario" class="form-control p-0" required style="box-shadow: none;border-radius:0px; color:black">
                         <label class="form-control-placeholder p-0" for="name lbl">Usuário</label>
                     </div>
 
                     <div class="form-group">
-                        <input [(ngModel)]='usuarioLogin.senha' type="password" name="senha" id="senha"
-                            class="form-control p-0" required style="box-shadow: none;border-radius:0px;">
+                        <input [(ngModel)]='usuarioLogin.senha' type="password" name="senha" id="senha" class="form-control p-0" required style="box-shadow: none;border-radius:0px;">
                         <label class="form-control-placeholder p-0" for="password">Senha</label>
                     </div>
-                    <p class="h6">Não possui cadastro? <u><a class="text-decoration-none text-light"
+                    <p class="h6 text-dark text-center">Não possui cadastro? <u><a class="text-decoration-none text-dark"
                                 routerLink='/cadastro' data-dismiss="modal">Cadastre-se!</a></u></p>
                 </div>
                 <div class="text-center border-0 mb-4">
-                    <button type="button" class="btn btn-outline-light col-6 col-md-6" data-dismiss="modal"
-                        (click)='logar()'>ENTRAR</button>
+                    <button type="button" class="btn btn-outline-dark col-6 col-md-6" data-dismiss="modal" (click)='logar()'>ENTRAR</button>
                 </div>
             </div>
         </div>
